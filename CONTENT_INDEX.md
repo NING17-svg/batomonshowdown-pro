@@ -12,37 +12,46 @@ hreflang, sitemap, and route-manifest validation.
 
 | URL | File/Route | Type | Primary Keyword | Search Intent | Primary CTA | Internal-Link Role | Notes |
 |---|---|---|---|---|---|---|---|
-| `/` | `src/data/pages/home.ts` | Landing | Template Game guide | Find the best entry point | Open Wiki / Browse Guides | Hub | Replace with the configured game's main hub intent. |
-| `/wiki` | `src/data/pages/wiki-pages.ts` | Guide | Template Game wiki | Understand confirmed facts | Guides / FAQ | Hub | Keep official fact base and source context here. |
-| `/guides` | `src/data/pages/guide-pages.ts` | Guide | Template Game guides | Find guide topics before launch | Wiki / Release Info | Hub | Do not invent walkthroughs before reliable details exist. |
-| `/release-date` | `src/data/pages/release-pages.ts` | Guide | Template Game release date | Check release timing and platforms | FAQ / Wiki | Supporting hub | Must stay tied to official or store sources. |
-| `/faq` | `src/data/pages/site-pages.ts` | Guide | Template Game FAQ | Get short answers | Release Info / Contact | Answer hub | FAQ schema enabled. |
-| `/about` | `src/data/pages/site-pages.ts` | Utility | about Template Game Guide | Trust and editorial policy | Contact | Trust | Explain unofficial status and sourcing rules. |
-| `/contact` | `src/data/pages/site-pages.ts` | Utility | contact Template Game Guide | Corrections and source updates | About | Trust | Contact channel pending. |
-| `/privacy-policy` | `src/data/pages/site-pages.ts` | Legal | privacy policy | Privacy and analytics | Terms | Trust | GA4 only when configured. |
-| `/terms` | `src/data/pages/site-pages.ts` | Legal | terms of use | Site use expectations | Privacy Policy | Trust | Keep unofficial disclaimer clear. |
+| `/` | `src/data/pages/home.ts` | Home | Batomon Showdown | Find the best entry point | Release Status / Best Team | Hub | Homepage ties release status, monsters, trainers, team, tips, and DLC together. |
+| `/release-status` | `src/data/pages/release-pages.ts` | Release | Batomon Showdown release date | Launch date, platform, pricing | How to Play / Monsters | Supporting hub | Sep 15 2026 launch, $14.99 base / $9.74 intro, Windows PC, Very Positive reviews. |
+| `/monsters` | `src/data/pages/wiki-pages.ts` | Wiki | Batomon Showdown monsters | Roster framing and collection loop | Best Team / Trainers | Hub | Steam tags (Creature Collector, Auto Battler, Card Battler, Dragons, Horses, Cats, Dogs). |
+| `/best-team` | `src/data/pages/guide-pages.ts` | Guide | Batomon Showdown best team | Team composition and synergy archetypes | Trainers / Tips | Hub | Four-piece framework + three progression stages. |
+| `/trainers` | `src/data/pages/site-pages.ts` | Wiki | Batomon Showdown trainer | Trainer ability categories | Best Team / Monsters | Reference | Tempo, scaling, economy trainer categories. |
+| `/how-to-play` | `src/data/pages/guide-pages.ts` | Guide | Batomon Showdown how to play | First-session async PvP walkthrough | Release Status / Tips | Supporting | Five-step first-session checklist + daily loop. |
+| `/system-requirements` | `src/data/pages/site-pages.ts` | Wiki | Batomon Showdown system requirements | Minimum PC specs and Steam Deck status | Release Status / How to Play | Reference | Windows 10, Dual Core 2 GHz, 2 MB RAM, 1 GB VRAM, 512 MB storage. |
+| `/tips` | `src/data/pages/guide-pages.ts` | Guide | Batomon Showdown tips | Progression advice for new players | How to Play / Best Team | Supporting | Daily queue, focus two or three Batomon, currency priority. |
+| `/dlc-skin-pack` | `src/data/pages/site-pages.ts` | Wiki | Batomon Showdown Supporter Pack | DLC price and base-game relationship | Release Status | Reference | Supporter Pack $4.99, AppID 5255370, optional cosmetic. |
+| `/faq` | `src/data/pages/site-pages.ts` | FAQ | Batomon Showdown FAQ | Quick answers across topics | Release Status / Contact | Trust | FAQ schema enabled, covers release/platform/gameplay/system/DLC. |
+| `/about` | `src/data/pages/site-pages.ts` | Site | about Batomon Showdown Guide | Editorial scope and sourcing | Contact | Trust | Unofficial fan guide snapshot dated 2026-09-18. |
+| `/contact` | `src/data/pages/site-pages.ts` | Site | contact Batomon Showdown Guide | Corrections and source updates | About | Trust | support@batomonshowdown.pro via Cloudflare Email Routing. |
+| `/privacy-policy` | `src/data/pages/site-pages.ts` | Site | privacy policy | Analytics, contact, ads | Terms | Trust | GA4 only when configured, optional Adsterra, no accounts. |
+| `/terms` | `src/data/pages/site-pages.ts` | Site | terms of use | Unofficial site notice | Privacy Policy | Trust | Unofficial status, informational use, acceptable use. |
 
 ## Generated Route Families
 
-- Fixed and tool pages: authored in `src/data/pages/*.ts` with explicit locale and final URL.
-- Entity Hubs and details: generated from `src/data/entities.ts` and the generic renderer in `src/lib/entities.ts`.
+- Fixed pages: declared in `src/data/pages/*.ts` with explicit locale and final URL.
+- Entity Hubs and details: none (Planning Contract `entity_families: []`).
 - Final route inventory: `npm run routes:manifest`.
-- Secondary-locale routes use the prefix configured in `src/data/site.ts`; the primary locale remains on root paths.
+- Primary locale uses the root path; no additional launch locales are configured.
 
 ## Content Clusters
 
-- Launch facts: `/release-date`, `/faq`
-- Official facts and safe guide structure: `/wiki`, `/guides`
-- Evergreen hub and trust: `/`, `/about`, `/contact`, `/privacy-policy`, `/terms`
+- Identity and release: `/release-status`, `/system-requirements`
+- Roster and reference: `/monsters`, `/trainers`
+- Gameplay: `/how-to-play`, `/best-team`, `/tips`
+- DLC: `/dlc-skin-pack`
 
 ## Internal Linking Map
 
-- Homepage should link to the most current high-demand pages.
-- Wiki should link to guide and release pages.
-- Guides should link to wiki and release pages.
-- Release Date should link to FAQ and official sources.
-- FAQ should include all current high-demand answer pages.
+- `/release-status` → `/system-requirements`, `/monsters`, `/best-team`, `/dlc-skin-pack`
+- `/monsters` → `/release-status`, `/best-team`, `/trainers`, `/tips`
+- `/best-team` → `/monsters`, `/trainers`, `/tips`
+- `/trainers` → `/monsters`, `/best-team`, `/tips`
+- `/how-to-play` → `/release-status`, `/best-team`, `/tips`, `/system-requirements`
+- `/system-requirements` → `/release-status`, `/how-to-play`
+- `/tips` → `/how-to-play`, `/monsters`, `/best-team`, `/trainers`
+- `/dlc-skin-pack` → `/release-status`
 
 ## Open Questions
 
-- Replace this section with game-specific unknowns during content configuration.
+- None at first launch. Per-monster detail pages and any future locale are deferred until underlying data and source access justify them.

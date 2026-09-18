@@ -529,8 +529,18 @@ for (const page of getAllPages()) {
   }
 }
 
-const heroFixturePage = getAllPages().find((page) => page.id === "guides");
-if (!heroFixturePage) fail("guide fixture page is missing for review-date rendering validation");
+const heroFixturePage =
+  getAllPages().find((page) => page.id === "guides") ||
+  getAllPages().find(
+    (page) =>
+      page.routeKind === "fixed" &&
+      page.pageType === "site" &&
+      page.id !== "home" &&
+      page.id !== "about" &&
+      page.id !== "faq",
+  ) ||
+  getAllPages().find((page) => page.routeKind === "fixed");
+if (!heroFixturePage) fail("content fixture page is missing for review-date rendering validation");
 const pageHeroMarkup = renderToStaticMarkup(
   createElement(PageHero, { page: heroFixturePage }),
 );
@@ -567,8 +577,13 @@ for (const locale of site.locales) {
   }
 }
 
+const searchFixturePage =
+  getAllPages().find((page) => page.id === "guides") ||
+  getAllPages().find((page) => page.id === "best-team") ||
+  getAllPages()[1];
+if (!searchFixturePage) fail("search fixture page is missing");
 const germanSearchFixture = {
-  ...getAllPages().find((page) => page.id === "guides")!,
+  ...searchFixturePage,
   id: "fixture-guides-de",
   locale: "de-DE",
   slug: "de/guides",
@@ -594,30 +609,45 @@ if (
   fail("locale-aware static search did not isolate and query the German route");
 }
 
+const recentContentFixtures = getAllPages().filter(
+  (page) =>
+    page.id !== "home" &&
+    page.pageType !== "faq" &&
+    page.pageType !== "site" &&
+    page.routeKind !== "tool",
+);
+const recentTrustFixture =
+  getAllPages().find((page) => page.id === "about") ||
+  getAllPages().find(
+    (page) => page.id === "privacy-policy" || page.id === "terms",
+  ) ||
+  getAllPages().find((page) => page.pageType === "site");
+const recentFaqFixture =
+  getAllPages().find((page) => page.id === "faq") || getAllPages()[0];
 const recentFixture = [
   {
-    ...getAllPages().find((page) => page.id === "guides")!,
+    ...(recentContentFixtures[0] || searchFixturePage),
     id: "recent-z",
     slug: "z",
     url: "/z",
     lastReviewed: "2026-08-01",
   },
   {
-    ...getAllPages().find((page) => page.id === "wiki")!,
+    ...(recentContentFixtures[1] || searchFixturePage),
     id: "recent-a",
     slug: "a",
     url: "/a",
     lastReviewed: "2026-08-01",
   },
   {
-    ...getAllPages().find((page) => page.id === "about")!,
+    ...recentTrustFixture!,
     id: "recent-trust",
     slug: "trust",
     url: "/trust",
     lastReviewed: "2026-09-01",
   },
   {
-    ...getAllPages().find((page) => page.id === "faq")!,
+    ...recentFaqFixture!,
     id: "recent-faq",
     slug: "faq-copy",
     url: "/faq-copy",

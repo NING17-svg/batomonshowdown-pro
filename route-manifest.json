@@ -1,0 +1,142 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "about",
+    "translationKey": "about",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/about",
+    "alternates": {
+      "en-US": "/about"
+    }
+  },
+  {
+    "id": "best-team",
+    "translationKey": "best-team",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/best-team",
+    "alternates": {
+      "en-US": "/best-team"
+    }
+  },
+  {
+    "id": "contact",
+    "translationKey": "contact",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/contact",
+    "alternates": {
+      "en-US": "/contact"
+    }
+  },
+  {
+    "id": "dlc-skin-pack",
+    "translationKey": "dlc-skin-pack",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/dlc-skin-pack",
+    "alternates": {
+      "en-US": "/dlc-skin-pack"
+    }
+  },
+  {
+    "id": "faq",
+    "translationKey": "faq",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/faq",
+    "alternates": {
+      "en-US": "/faq"
+    }
+  },
+  {
+    "id": "how-to-play",
+    "translationKey": "how-to-play",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/how-to-play",
+    "alternates": {
+      "en-US": "/how-to-play"
+    }
+  },
+  {
+    "id": "monsters",
+    "translationKey": "monsters",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/monsters",
+    "alternates": {
+      "en-US": "/monsters"
+    }
+  },
+  {
+    "id": "privacy-policy",
+    "translationKey": "privacy-policy",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/privacy-policy",
+    "alternates": {
+      "en-US": "/privacy-policy"
+    }
+  },
+  {
+    "id": "release-status",
+    "translationKey": "release-status",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/release-status",
+    "alternates": {
+      "en-US": "/release-status"
+    }
+  },
+  {
+    "id": "system-requirements",
+    "translationKey": "system-requirements",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/system-requirements",
+    "alternates": {
+      "en-US": "/system-requirements"
+    }
+  },
+  {
+    "id": "terms",
+    "translationKey": "terms",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/terms",
+    "alternates": {
+      "en-US": "/terms"
+    }
+  },
+  {
+    "id": "tips",
+    "translationKey": "tips",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/tips",
+    "alternates": {
+      "en-US": "/tips"
+    }
+  },
+  {
+    "id": "trainers",
+    "translationKey": "trainers",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/trainers",
+    "alternates": {
+      "en-US": "/trainers"
+    }
+  }
+]

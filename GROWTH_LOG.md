@@ -6,6 +6,16 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-18 - Batomon Showdown initial launch configuration
+
+- Task: Configure the generated Batomon Showdown site for the September 18, 2026 launch snapshot.
+- Files changed: `src/data/site.ts`, `src/data/pages/home.ts`, `src/data/pages/release-pages.ts`, `src/data/pages/wiki-pages.ts`, `src/data/pages/guide-pages.ts`, `src/data/pages/site-pages.ts`, `src/data/faq.ts`, `src/data/navigation.ts`, `src/data/theme.ts`, `scripts/validate-template-contract.ts`, `package.json`, `wrangler.jsonc`, `.env.example`, `README.md`, `AGENTS.md`, `CONTENT_INDEX.md`, `route-manifest.json`, and the IndexNow verification file under `public/`.
+- URLs affected: `/`, `/release-status`, `/monsters`, `/best-team`, `/trainers`, `/how-to-play`, `/system-requirements`, `/tips`, `/dlc-skin-pack`, `/faq`, `/about`, `/contact`, `/privacy-policy`, `/terms`. No new URLs added beyond the V3 content package; no sample template URLs left in the route manifest.
+- SEO/GEO changed: Page titles, meta descriptions, hero copy, key facts, FAQ entries, internal-link targets, and source attributions all rewritten to the Batomon Showdown Steam store snapshot. Last-reviewed date set to 2026-09-18 on every page.
+- Browser baseline unchanged: neutral SVG favicon, web manifest, `X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options`, and the fixed AdSense ownership trio are preserved.
+- Verification: Typecheck, lint, template/content/SEO validation, build, and rendered-SEO validation all pass (`npm run verify`).
+- Ad baseline: Fixed Adsterra-ready units remain empty; `enabled=false`, `provider=none`. No real ad network requests are emitted.
+
 ### 2026-08-12 - Static discovery and review freshness baseline added
 
 - Task: Add locale-aware static search, automatic recent updates, visible review dates, and browser metadata/security defaults to the shared template.
