@@ -16,6 +16,14 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 - Verification: Typecheck, lint, template/content/SEO validation, build, and rendered-SEO validation all pass (`npm run verify`).
 - Ad baseline: Fixed Adsterra-ready units remain empty; `enabled=false`, `provider=none`. No real ad network requests are emitted.
 
+### 2026-09-18 - Adsterra six-unit integration applied
+
+- Task: Populate the fixed Adsterra ad units (`native-banner`, `banner-728x90`, `banner-468x60`, `banner-320x50`, `banner-160x600`, `smartlink`) for batomonshowdown.pro after launch.
+- Files changed: `src/data/ads.ts`, `GROWTH_LOG.md`.
+- URLs affected: None; only the shared AdSlot components (`responsive-banner`, `native-banner`, `right-rail`) and the footer Smartlink now render the real Adsterra placements.
+- Ad baseline: `src/data/ads.ts` carries six real, non-empty Adsterra values (Native Banner, Banner 728x90, Banner 468x60, Banner 320x50, Banner 160x600, Smartlink). No new ad components, slots, or page locations were added; no other site files were modified.
+- Verification: `npm run verify` passes locally. No Cloudflare build, live ad requests, or rendered DOM checks were performed by this role.
+
 ### 2026-08-12 - Static discovery and review freshness baseline added
 
 - Task: Add locale-aware static search, automatic recent updates, visible review dates, and browser metadata/security defaults to the shared template.
