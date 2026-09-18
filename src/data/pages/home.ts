@@ -90,6 +90,18 @@ export const homePage: PageContent = {
           href: "/best-team",
         },
         {
+          title: "Best Builds",
+          summary:
+            "Pick from six Patch 14 named comps (Hyperbug, Fire Sunsage, Rock Pebbler, Craghorn, Treasure Hunter, Shock Bees) with trainer pairings.",
+          href: "/best-builds",
+        },
+        {
+          title: "Events",
+          summary:
+            "Pick the right Day 3, Day 6, or Day 9 reward for your trainer - Dragon's Nest, Bug Collector, or Rainbow Berry.",
+          href: "/events",
+        },
+        {
           title: "Tips",
           summary:
             "Apply progression rules: queue daily, focus two or three carry Batomon, and spend currency smartly.",

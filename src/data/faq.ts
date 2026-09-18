@@ -359,6 +359,88 @@ export const faqItems: FAQItem[] = [
     schemaEligible: true,
     sourceStatus: "official",
   },
+  // Best Builds
+  {
+    id: "bestbuilds-what-is-meta",
+    question: "What is the current Batomon Showdown meta?",
+    answer:
+      "The Patch 14 meta is built around six named comps - Hyperbug, Fire Sunsage (Blixie), Rock Pebbler (Geminiss), Craghorn, Treasure Hunter, and Shock Bees - each of which solves a different match phase. Bug Velocect / Formiqueen sits at 7.9% play rate, Fire Sunsage / Blixie at 2.19%, and Grass Craghorn at 10.07% on critcap.gg's 22,524-run ranked-gameplay snapshot.",
+    pageIds: ["best-builds", "faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "placeholder",
+  },
+  {
+    id: "bestbuilds-easiest-comp",
+    question: "Which Patch 14 comp is easiest for a new player?",
+    answer:
+      "Craghorn is the safest default because it has the highest single-creature play rate (10.07%) in Patch 14 and wins the tempo swing phase without requiring a strict comp commitment. Hyperbug is stronger in the early aggro phase but falls off if the match reaches turn six; queue Hyperbug only if your roster is ready for an early-game close.",
+    pageIds: ["best-builds", "faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "placeholder",
+  },
+  {
+    id: "bestbuilds-climb-ranked",
+    question: "What comp should I queue to climb Ranked into Masters?",
+    answer:
+      "Craghorn for a default tempo swing build, Shock Bees when your opponent is queueing slower scaling comps, and Rock Pebbler (Geminiss) when your roster has the Rock payoff pieces leveled. The ranked-gameplay guide treats these three as the climb-stable comps; Hyperbug, Fire Sunsage, and Treasure Hunter are stronger in their specific match phases but lose more often when the opponent's comp does not line up.",
+    pageIds: ["best-builds", "faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "placeholder",
+  },
+  {
+    id: "bestbuilds-craghorn-vs-treasure-hunter",
+    question: "Craghorn or Treasure Hunter for a tempo swing comp?",
+    answer:
+      "Pick Craghorn if your trainer is tempo and your team can win the early exchanges outright. Pick Treasure Hunter if your trainer is economy and your team needs generated resources to convert a tempo lead. Both solve the tempo swing phase, but Craghorn pays off through creature payoff while Treasure Hunter pays off through resource generation.",
+    pageIds: ["best-builds", "faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "placeholder",
+  },
+  // Events
+  {
+    id: "events-when-do-events-fire",
+    question: "When do Batomon Showdown events fire?",
+    answer:
+      "Events fire on Day 3, Day 6, and Day 9 of every run, and each trigger offers three to four reward choices. The v1.0 patch added Traveling Merchant as a weekly rotation and Fossil Discovery as a side event outside the Day 3 / Day 6 / Day 9 cadence.",
+    pageIds: ["events", "faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "placeholder",
+  },
+  {
+    id: "events-day-3-pick",
+    question: "What should I pick on Day 3?",
+    answer:
+      "Pick the reward that matches your trainer's tempo, scaling, or economy plan. Dragon's Nest for a scaling trainer, Bug Collector for a tempo or economy trainer whose comp commits to Bug creatures, Rainbow Berry as the flexible default when neither named payoff fits your current team.",
+    pageIds: ["events", "faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "placeholder",
+  },
+  {
+    id: "events-dragons-nest-or-bug-collector",
+    question: "Should I pick Dragon's Nest or Bug Collector on Day 3?",
+    answer:
+      "Pick Dragon's Nest if your trainer is scaling and your comp reaches the late-game phase. Pick Bug Collector if your trainer is tempo or economy and your comp commits to Bug creatures. The wrong pick costs tempo immediately rather than at the next match.",
+    pageIds: ["events", "faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "placeholder",
+  },
+  {
+    id: "events-traveling-merchant",
+    question: "What is the Traveling Merchant in Batomon Showdown?",
+    answer:
+      "Traveling Merchant is a v1.0 weekly-rotation event that runs outside the Day 3 / Day 6 / Day 9 cadence. The merchant offers a different inventory each week and is the right place to spend saved currency on trinkets your current comp cannot yet drop.",
+    pageIds: ["events", "faq"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "placeholder",
+  },
   // DLC
   {
     id: "dlc-what-is-supporter-pack",

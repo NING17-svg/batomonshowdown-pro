@@ -9,6 +9,8 @@ export const primaryNavigation: LocalizedNavigationItem[] = [
   { href: "/release-status", labels: { "en-US": "Release Status" } },
   { href: "/monsters", labels: { "en-US": "Monsters" } },
   { href: "/best-team", labels: { "en-US": "Best Team" } },
+  { href: "/best-builds", labels: { "en-US": "Best Builds" } },
+  { href: "/events", labels: { "en-US": "Events" } },
   { href: "/trainers", labels: { "en-US": "Trainers" } },
   { href: "/how-to-play", labels: { "en-US": "How to Play" } },
   { href: "/tips", labels: { "en-US": "Tips" } },

@@ -6,6 +6,24 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-19 - Best builds and meta team comps page added
+
+- Task: Add the Patch 14 meta comps coverage that the /best-team page did not name.
+- Files changed: `src/data/pages/guide-pages.ts`, `src/data/faq.ts`, `src/data/pages/site-pages.ts`, `src/data/navigation.ts`, `src/data/pages/home.ts`, `CONTENT_INDEX.md`.
+- URLs affected: `/best-builds` (new), and the existing `/best-team`, `/how-to-play`, `/tips`, `/`, `/faq` pages that cross-link to it.
+- Content: Six named comps (Hyperbug, Fire Sunsage/Blixie, Rock Pebbler/Geminiss, Craghorn, Treasure Hunter, Shock Bees) with core Batomon, trainer pairings, key trinkets, and the match phase each comp wins. Quick Answer leads with the six comp names and a one-line phase role per comp. Page is sourced from critcap.gg's 22,524-run Patch 14 dashboard and the gameplay.tips ranked-gameplay guide; `sourceStatus: placeholder` reflects that those are community/dashboard references rather than the official Steam description.
+- Internal links: /best-team, /how-to-play, /tips, and /monsters added as related pages; homepage "Where to start" module surfaces the new page; FAQ page references the new best-builds FAQ ids.
+- Verification: `npm run verify` (typecheck, lint, template/content/SEO validation, build, rendered-SEO validation) will run as part of the shared heavy verifier.
+
+### 2026-09-19 - Events Day 3 / Day 6 / Day 9 reward guide added
+
+- Task: Add event-cadence and reward-pick coverage that /how-to-play and /tips did not cover.
+- Files changed: `src/data/pages/guide-pages.ts`, `src/data/faq.ts`, `src/data/pages/site-pages.ts`, `src/data/navigation.ts`, `src/data/pages/home.ts`, `CONTENT_INDEX.md`.
+- URLs affected: `/events` (new), and the existing `/how-to-play`, `/tips`, `/best-team`, `/best-builds`, `/`, `/faq` pages that cross-link to it.
+- Content: Day 3 / Day 6 / Day 9 cadence with the three named Day 3 reward choices (Dragon's Nest, Bug Collector, Rainbow Berry), per-trainer pick criteria, the Day 6 / Day 9 re-evaluation rule, and the v1.0 Traveling Merchant and Fossil Discovery additions. Quick Answer leads with the trigger days and the three named reward choices. Page is sourced from the gameplay.tips ranked-gameplay guide and the 9puz beginner guide; `sourceStatus: placeholder` reflects that those are community guides rather than the official Steam description.
+- Internal links: /how-to-play, /best-builds, /tips, and /monsters added as related pages; homepage "Where to start" module surfaces the new page; FAQ page references the new events FAQ ids.
+- Verification: `npm run verify` (typecheck, lint, template/content/SEO validation, build, rendered-SEO validation) will run as part of the shared heavy verifier.
+
 ### 2026-09-18 - Batomon Showdown initial launch configuration
 
 - Task: Configure the generated Batomon Showdown site for the September 18, 2026 launch snapshot.
