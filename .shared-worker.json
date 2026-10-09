@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "site_id": "batomonshowdown-pro",
+  "domain": "batomonshowdown.pro",
+  "repository": "NING17-svg/batomonshowdown-pro",
+  "worker": "game-guide-new-pool-001",
+  "deployment_repository": "NING17-svg/game-guide-new-pool-001",
+  "pool_id": "new-guide-pool-001",
+  "marker_path": "/__deployment.json"
+}
