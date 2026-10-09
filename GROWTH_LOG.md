@@ -44,3 +44,9 @@ Operational diary for `batomonshowdown.pro` (site_id `batomonshowdown-pro`). Rec
 
 - Site is live, indexed on the major search platforms, and ready for `content_updates` via the content-editor / content-updater pipeline.
 - `adsterra-integrator` is the next job; it will re-run preflight on the updated registry, fill the 11 manifest keys, and validate the public Adsterra loaders before flipping `adsterra.status` to `enabled`.
+
+## 2026-10-09 — Adsterra integration
+
+- Filled all 11 manifest keys in `src/data/ads.ts` with real Adsterra placement codes collected from `batomonshowdown.pro` (placements 31293823–31293827). Popunder, Social Bar, Banner 300x250 and Banner 160x300 were newly created; Banner 728x90 / 468x60 / 320x50, Native Banner and Smartlink were reused. Banner 468x60 and Smartlink were resubmitted once and returned to Active before code collection.
+- `npm run verify` re-run after the placeholder replacement.
+- `registry/sites.yaml` `adsterra.status` flipped to `enabled` with `target_commit` pointing at this push; the V4 ad-placement inventory is unchanged.
