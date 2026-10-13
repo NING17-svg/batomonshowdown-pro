@@ -442,7 +442,7 @@ export const guidePages: PageContent[] = [
         type: "prose",
         heading: "Season 1 Numbers From gamesfuze",
         body:
-          "Season 1 data from gamesfuze shows the same Miasmaw + Drumire comp at the S+ tier, with Cairnage + Opalion at 59% 10-win rate, Fumungus + Cobrex at 55% 10-win rate, and Swoonet + Snapscald at 49% 10-win rate as additional strong ladders.\n\nUnder the post-1.1.0 ladder, two more public sources have surfaced independent top-comp picks: batomon.com lists Fire Sunsage (Blixie core) at 7.92 avg wins / 26.46% win rate, and critcap.gg ranks Cobrex + Fumungus (Puffloon core) at 41.5% 10-win across 178 runs. Triangulate these alongside the S+ ladders above before committing a run to a single core.\n\nThe 62.2% Gaiadrasil + Dryadell core only holds when its full support package (Onsetra, Thorntail, Panbud, Dracana) is also available. Without that package the core falls back toward the 45-50% range of the other S+ comps.",
+          "Season 1 data from gamesfuze shows the same Miasmaw + Drumire comp at the S+ tier, with Cairnage + Opalion at 59% 10-win rate, Fumungus + Cobrex at 55% 10-win rate, and Swoonet + Snapscald at 49% 10-win rate as additional strong ladders.\n\nIn critcap.gg's current team-comp table, Fire Sunsage (Blixie core) has 7.92 average wins and a 26.46% win rate. Its Toxic Fumungus comp includes Puffloon, Fumungus, and Cobrex, with 7.43 average wins and a 21.43% win rate. These are separate comp-level figures from critcap.gg; compare them with the Season 1 examples above without treating their samples or time windows as identical.\n\nThe 62.2% Gaiadrasil + Dryadell core only holds when its full support package (Onsetra, Thorntail, Panbud, Dracana) is also available. Without that package the core falls back toward the 45-50% range of the other S+ comps.",
       },
       {
         id: "standout-units",
@@ -522,12 +522,12 @@ export const guidePages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "A run ends when you defeat 10 NPC trainers and collect 10 badges. Teams are built by picking a Trainer, choosing a core pair of Batomon to anchor the early game, then filling the remaining slots around four late-game roles. Under the post-1.1.0 cooldown-trinket ladder, three independent public guides each crown a different top comp; triangulate Fire Sunsage (batomon.com), Cobrex+Fumungus (critcap.gg), and the worldeka Season 1 archetypes before committing.",
+      "A run ends when you defeat 10 NPC trainers and collect 10 badges. Teams are built by picking a Trainer, choosing a core pair of Batomon to anchor the early game, then filling the remaining slots around four late-game roles. Compare Fire Sunsage and Toxic Fumungus in critcap.gg's current team-comp table with the Season 1 archetypes described by Worldeka before committing to a core.",
     keyFacts: [
       { label: "Top core", value: "Gaiadrasil + Dryadell · 62.2% 10-win" },
       { label: "Post-1.1.0 pick", value: "Fire Sunsage · 26.46% win rate" },
       { label: "Late-game frame", value: "Starter / Repeater / Amplifier / Survivor" },
-      { label: "Sources", value: "batomon.com · critcap.gg · worldeka" },
+      { label: "Sources", value: "critcap.gg · Worldeka" },
     ],
     modules: [
       {
@@ -581,43 +581,43 @@ export const guidePages: PageContent[] = [
           {
             title: "Fire Sunsage (Blixie core)",
             summary:
-              "Listed as the top comp by batomon.com 30-day data at 7.92 avg wins and 26.46% win rate. The Blixie core lines up with the Repeater and Amplifier roles and pairs cleanly with the new Fire-type trinket priority.",
+              "Listed by critcap.gg at 7.92 average wins and a 26.46% win rate. The shown board includes Magmite, Sunsage, Blixie, and three support units; confirm current trinket effects in game before locking the build.",
             badge: "26.46% win",
           },
           {
-            title: "Cobrex + Fumungus (Puffloon core)",
+            title: "Toxic Fumungus (Puffloon + Cobrex)",
             summary:
-              "critcap.gg top comp at 41.5% 10-win across 178 runs. Cobrex + Fumungus stack the shared HP pool through shield and spore triggers; Puffloon is the multicast Repeater.",
-            badge: "41.5% 10-win",
+              "Listed by critcap.gg at 7.43 average wins and a 21.43% win rate. Its shown board includes Puffloon, Fumungus, and Cobrex; use their shield and spore interactions to protect the shared HP pool while Puffloon repeats casts.",
+            badge: "21.43% win",
           },
           {
             title: "Ouroblaze Burn Melt (Season 1)",
             summary:
-              "worldeka Season 1 archetype. Ouroblaze leads a Burn line that melts the front row while Ouroblaze's shield payoffs keep the shared HP pool alive. Maps to the Starter / Survivor slots.",
+              "worldeka Season 1 archetype. Worldeka pairs Ouroblaze with Sununa for a Burn-focused damage-over-time line. Protect the front long enough for Burn to scale.",
             badge: "Worldeka S1",
           },
           {
             title: "Pylon Shock (Season 1)",
             summary:
-              "worldeka Season 1 archetype. Pylon anchors a Shock package that hits backline enemies while still feeding trinket triggers. Maps to the Amplifier slot.",
+              "worldeka Season 1 archetype. Worldeka names Pylon, Electronade, and Bumble Bolt as the core of a positioning-sensitive burst line.",
             badge: "Worldeka S1",
           },
           {
             title: "Swoonet Water Flood (Season 1)",
             summary:
-              "worldeka Season 1 archetype. Swoonet leads a Water Flood line that converts type stacks into healing and sustain. Maps to the Repeater slot.",
+              "worldeka Season 1 archetype. Worldeka pairs Swoonet with Droplet for a tempo-and-healing line that benefits from frequent ability triggers.",
             badge: "Worldeka S1",
           },
           {
             title: "Puffloon Multicast (Season 1)",
             summary:
-              "worldeka Season 1 archetype. Puffloon's multicast scales with knockouts and stacks hardest when paired with the shield-and-spore triggers of the Cobrex+Fumungus core.",
+              "worldeka Season 1 archetype. Worldeka pairs Puffloon with Onsetra and spider units for frequent, staggered ability triggers. The timing of those triggers is the central build constraint.",
             badge: "Worldeka S1",
           },
           {
             title: "Economy (Season 1)",
             summary:
-              "worldeka Season 1 archetype. The Economy build leans on Burglar or Scavenger as the Trainer and stacks gold-producing trinkets (Arcade Coins, Gold Nugget, Piggy Bank) to fund extra merges and rerolls.",
+              "worldeka Season 1 archetype. Worldeka's Economy Farming core uses Plunderbird for resources, Pebbler for defense, and Good Shell for shop cycling. Use the extra gold to fund rerolls and upgrades.",
             badge: "Worldeka S1",
           },
         ],
@@ -741,14 +741,14 @@ export const guidePages: PageContent[] = [
           {
             title: "Plan one Survivor",
             body:
-              "Survivor (1 slot): a tank or shield-bearer that keeps the shared HP pool alive long enough for the Repeaters and Amplifiers to scale. Fumungus, Cobrex, and Furnadon are common Survivor picks. Maps directly to the critcap.gg top comp Cobrex + Fumungus (Puffloon core) and to the Ouroblaze Burn Melt Survivor's front.",
+              "Survivor (1 slot): a tank or shield-bearer that keeps the shared HP pool alive long enough for the Repeaters and Amplifiers to scale. Fumungus, Cobrex, and Furnadon are common Survivor picks. Maps to critcap.gg's Toxic Fumungus comp with Puffloon and Cobrex and to the Ouroblaze Burn Melt Survivor's front.",
             doneCondition:
               "A Survivor is holding the shared HP pool above the failure threshold in long rounds.",
           },
           {
             title: "Plan an Economy slot if the run leans reroll-heavy",
             body:
-              "Economy slot (1 slot, optional): when the run pivots toward the worldeka Season 1 Economy archetype, dedicate one slot to a gold-producing trinket chain (Arcade Coins, Gold Nugget, Piggy Bank, Fool's Gold) and pick Burglar or Scavenger as the Trainer. This slot replaces an Amplifier slot only when the rest of the board already covers the Repeater role.",
+              "Economy slot (1 slot, optional): when the run pivots toward Worldeka's Season 1 Economy archetype, build around Plunderbird, Pebbler, and Good Shell so resource generation can fund rerolls and upgrades. This slot replaces an Amplifier slot only when the rest of the board already covers the Repeater role.",
             doneCondition:
               "An economy trinket chain is online and reroll budget covers the planned merge steps.",
           },
@@ -760,7 +760,7 @@ export const guidePages: PageContent[] = [
         tone: "tip",
         title: "Best Team Build Priorities And Common Mistakes",
         body:
-          "Build around the Trainer you picked at run start, not around a single Batomon you want to force. Under the post-1.1.0 ladder, triangulate between Fire Sunsage (batomon.com), Cobrex+Fumungus (critcap.gg), and the worldeka Season 1 archetypes rather than anchoring on one source. Choose the core from the early shop offerings (Days 1-3). If the shop does not support your planned core, pivot to whichever of Gaiadrasil, Miasmaw, Ouroblaze, Swoonet, Cairnage, or Fumungus is actually available, rather than chasing scaling items that never arrive. Plan the four late-game roles before Day 5. A team that only deals damage or only stacks shields will lose to comps that do both. Do not over-invest in one-role comps. The strongest runs in the dataset always include at least one Starter, one Repeater, and one Survivor by the second shop refresh. Treat Dracana and Onsetra as near-default slots in Season 1: their pick rates are the highest in the public data, and they slot cleanly into every S+ comp above. Re-read trinket priority after every patch: 1.1.0 reshuffled the cooldown-trinket ladder and pushed Alpha Crown to Mythical rarity.",
+          "Build around the Trainer you picked at run start, not around a single Batomon you want to force. Compare Fire Sunsage and Toxic Fumungus in critcap.gg's current table with Worldeka's Season 1 archetypes before choosing a core. Choose the core from the early shop offerings (Days 1-3). If the shop does not support your planned core, pivot to whichever of Gaiadrasil, Miasmaw, Ouroblaze, Swoonet, Cairnage, or Fumungus is actually available, rather than chasing scaling items that never arrive. Plan the four late-game roles before Day 5. A team that only deals damage or only stacks shields will lose to comps that do both. Do not over-invest in one-role comps. The strongest runs in the dataset always include at least one Starter, one Repeater, and one Survivor by the second shop refresh. Treat Dracana and Onsetra as near-default slots in Season 1: their pick rates are the highest in the public data, and they slot cleanly into every S+ comp above. Re-read trinket priority after every patch: 1.1.0 reshuffled the cooldown-trinket ladder and pushed Alpha Crown to Mythical rarity.",
       },
     ],
     faqIds: [],

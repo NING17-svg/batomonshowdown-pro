@@ -72,7 +72,7 @@ export const homePage: PageContent = {
               label: "Best Team And Meta Builds",
               href: "/guides/team-builds-meta",
               description:
-                "Post-1.1.0 meta-comp survey across Fire Sunsage, Cobrex+Fumungus and the worldeka Season 1 archetypes, plus the 4-role framework (Starter, Repeater, Amplifier, Survivor).",
+                "Meta-comp survey across Fire Sunsage, Toxic Fumungus and Worldeka's Season 1 archetypes, plus the 4-role framework (Starter, Repeater, Amplifier, Survivor).",
             },
             {
               label: "Positioning And Synergies",

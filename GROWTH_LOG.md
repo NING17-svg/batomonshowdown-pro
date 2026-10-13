@@ -60,3 +60,10 @@ Operational diary for `batomonshowdown.pro` (site_id `batomonshowdown-pro`). Rec
 - Refreshed discovery/link entries on `/`, `/guides/batomon-tier-list/`, `/guides/trainer-tier-list/` and `/guides/battle-strategy/` to reference the post-1.1.0 sources and core picks.
 - Updated `lastReviewed` to 2026-10-13 on `home`, `trainer-tier-list`, `batomon-tier-list`, `team-builds-meta`, `battle-strategy`. `CONTENT_INDEX.md` description for `team-builds-meta` now mentions the post-1.1.0 meta-comp survey.
 - Sources: `https://batomon.com/`, `https://worldeka.com/batomon-showdown-season-1-meta-teams-guide-best-builds-and-synergies`, `https://www.critcap.gg/batomon/team-comps`, `https://batodex.com/` (Alpha Crown Mythical fact).
+
+## 2026-10-13 — Meta-comp source correction
+
+- Corrected the same-day survey's source attribution: Critcap, not batomon.com, currently lists Fire Sunsage (Blixie) at 7.92 average wins and 26.46% win rate.
+- Replaced the unsupported 41.5% / 178-run Cobrex + Fumungus claim with Critcap's Toxic Fumungus board (Puffloon, Fumungus, Cobrex), listed at 7.43 average wins and 21.43% win rate. These are Critcap comp-level win rates, not a shared 10-win comparison with older Season 1 samples.
+- Aligned the Worldeka archetype summaries on `/guides/team-builds-meta/` with the units and mechanics actually named in its Season 1 guide. Updated the related source labels on `/guides/batomon-tier-list/` and `/guides/team-builds-meta/`, plus the survey description on `/`; page URLs, metadata, and link roles are unchanged.
+- Sources checked: `https://www.critcap.gg/batomon/team-comps/` and `https://worldeka.com/batomon-showdown-season-1-meta-teams-guide-best-builds-and-synergies/`.
