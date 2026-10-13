@@ -309,6 +309,45 @@ export const guidePages: PageContent[] = [
         body:
           "Burglar and Scavenger are the economy-tier picks because they multiply the same resource that the merge-and-trinket progression is already feeding. Painter is the type-tier pick. Twins is the build-defining pick and the most punishing if the core never reaches Level 3. Gentleman and Black Belt are the niche picks and only pay off when the run's offered hand is built for them from the start.",
       },
+      {
+        id: "season1-trainer-picks",
+        type: "comparison",
+        heading: "Season 1 Trainer Picks",
+        options: [
+          {
+            name: "Ginto",
+            summary:
+              "Transforms a Batomon into its Legendary form on Day 7, or hands three free daily shop rerolls instead.",
+            bestFor:
+              "Runs that want either a forced Legendary spike on Day 7 or a reroll advantage through the mid-run.",
+            badge: "Season 1",
+          },
+          {
+            name: "The Gamer",
+            summary:
+              "Guarantees a Mythical-tier Batomon pull on Day 9.",
+            bestFor:
+              "Runs that can stay alive long enough to reach the Day 9 payout window.",
+            badge: "Season 1",
+          },
+          {
+            name: "The Masked Man",
+            summary:
+              "Every four days, adopts the ability of another Trainer in the current run.",
+            bestFor:
+              "Runs that want to chain two Trainer passives without committing at run start.",
+            badge: "Season 1",
+          },
+          {
+            name: "The Black Belt",
+            summary:
+              "Requires exactly one Fighting-type Batomon in the squad; that unit triggers On Victory when the fight ends.",
+            bestFor:
+              "Runs whose offered hand already includes a Fighting-type carry.",
+            badge: "Season 1",
+          },
+        ],
+      },
     ],
     faqIds: [],
     relatedPageIds: [
@@ -319,7 +358,7 @@ export const guidePages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "official",
-    lastReviewed: "2026-10-09",
+    lastReviewed: "2026-10-13",
   },
   {
     id: "batomon-tier-list",
@@ -403,7 +442,7 @@ export const guidePages: PageContent[] = [
         type: "prose",
         heading: "Season 1 Numbers From gamesfuze",
         body:
-          "Season 1 data from gamesfuze shows the same Miasmaw + Drumire comp at the S+ tier, with Cairnage + Opalion at 59% 10-win rate, Fumungus + Cobrex at 55% 10-win rate, and Swoonet + Snapscald at 49% 10-win rate as additional strong ladders.\n\nThe 62.2% Gaiadrasil + Dryadell core only holds when its full support package (Onsetra, Thorntail, Panbud, Dracana) is also available. Without that package the core falls back toward the 45-50% range of the other S+ comps.",
+          "Season 1 data from gamesfuze shows the same Miasmaw + Drumire comp at the S+ tier, with Cairnage + Opalion at 59% 10-win rate, Fumungus + Cobrex at 55% 10-win rate, and Swoonet + Snapscald at 49% 10-win rate as additional strong ladders.\n\nUnder the post-1.1.0 ladder, two more public sources have surfaced independent top-comp picks: batomon.com lists Fire Sunsage (Blixie core) at 7.92 avg wins / 26.46% win rate, and critcap.gg ranks Cobrex + Fumungus (Puffloon core) at 41.5% 10-win across 178 runs. Triangulate these alongside the S+ ladders above before committing a run to a single core.\n\nThe 62.2% Gaiadrasil + Dryadell core only holds when its full support package (Onsetra, Thorntail, Panbud, Dracana) is also available. Without that package the core falls back toward the 45-50% range of the other S+ comps.",
       },
       {
         id: "standout-units",
@@ -455,7 +494,7 @@ export const guidePages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "official",
-    lastReviewed: "2026-10-09",
+    lastReviewed: "2026-10-13",
   },
   {
     id: "team-builds-meta",
@@ -483,12 +522,12 @@ export const guidePages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "A run ends when you defeat 10 NPC trainers and collect 10 badges. Teams are built by picking a Trainer, choosing a core pair of Batomon to anchor the early game, then filling the remaining slots around four late-game roles. The current top cores come from 30-day public match data on batomon.com and Season 1 coverage on gamesfuze.",
+      "A run ends when you defeat 10 NPC trainers and collect 10 badges. Teams are built by picking a Trainer, choosing a core pair of Batomon to anchor the early game, then filling the remaining slots around four late-game roles. Under the post-1.1.0 cooldown-trinket ladder, three independent public guides each crown a different top comp; triangulate Fire Sunsage (batomon.com), Cobrex+Fumungus (critcap.gg), and the worldeka Season 1 archetypes before committing.",
     keyFacts: [
       { label: "Top core", value: "Gaiadrasil + Dryadell · 62.2% 10-win" },
-      { label: "Most-picked slot", value: "Dracana 17.4%" },
+      { label: "Post-1.1.0 pick", value: "Fire Sunsage · 26.46% win rate" },
       { label: "Late-game frame", value: "Starter / Repeater / Amplifier / Survivor" },
-      { label: "Source", value: "batomon.com 30-day + Season 1 gamesfuze" },
+      { label: "Sources", value: "batomon.com · critcap.gg · worldeka" },
     ],
     modules: [
       {
@@ -533,6 +572,102 @@ export const guidePages: PageContent[] = [
             badge: "55% 10-win",
           },
         ],
+      },
+      {
+        id: "post-110-survey",
+        type: "entity-grid",
+        heading: "Post-1.1.0 Meta-Comp Survey",
+        items: [
+          {
+            title: "Fire Sunsage (Blixie core)",
+            summary:
+              "Listed as the top comp by batomon.com 30-day data at 7.92 avg wins and 26.46% win rate. The Blixie core lines up with the Repeater and Amplifier roles and pairs cleanly with the new Fire-type trinket priority.",
+            badge: "26.46% win",
+          },
+          {
+            title: "Cobrex + Fumungus (Puffloon core)",
+            summary:
+              "critcap.gg top comp at 41.5% 10-win across 178 runs. Cobrex + Fumungus stack the shared HP pool through shield and spore triggers; Puffloon is the multicast Repeater.",
+            badge: "41.5% 10-win",
+          },
+          {
+            title: "Ouroblaze Burn Melt (Season 1)",
+            summary:
+              "worldeka Season 1 archetype. Ouroblaze leads a Burn line that melts the front row while Ouroblaze's shield payoffs keep the shared HP pool alive. Maps to the Starter / Survivor slots.",
+            badge: "Worldeka S1",
+          },
+          {
+            title: "Pylon Shock (Season 1)",
+            summary:
+              "worldeka Season 1 archetype. Pylon anchors a Shock package that hits backline enemies while still feeding trinket triggers. Maps to the Amplifier slot.",
+            badge: "Worldeka S1",
+          },
+          {
+            title: "Swoonet Water Flood (Season 1)",
+            summary:
+              "worldeka Season 1 archetype. Swoonet leads a Water Flood line that converts type stacks into healing and sustain. Maps to the Repeater slot.",
+            badge: "Worldeka S1",
+          },
+          {
+            title: "Puffloon Multicast (Season 1)",
+            summary:
+              "worldeka Season 1 archetype. Puffloon's multicast scales with knockouts and stacks hardest when paired with the shield-and-spore triggers of the Cobrex+Fumungus core.",
+            badge: "Worldeka S1",
+          },
+          {
+            title: "Economy (Season 1)",
+            summary:
+              "worldeka Season 1 archetype. The Economy build leans on Burglar or Scavenger as the Trainer and stacks gold-producing trinkets (Arcade Coins, Gold Nugget, Piggy Bank) to fund extra merges and rerolls.",
+            badge: "Worldeka S1",
+          },
+        ],
+      },
+      {
+        id: "season1-trainer-callout",
+        type: "comparison",
+        heading: "Season 1 Trainer Picks",
+        options: [
+          {
+            name: "Ginto",
+            summary:
+              "Transforms a Batomon into its Legendary form on Day 7, or grants three free daily shop rerolls instead.",
+            bestFor:
+              "Runs that want either a forced Legendary spike or a sustained reroll advantage through the mid-run.",
+            badge: "Season 1 pick",
+          },
+          {
+            name: "The Gamer",
+            summary:
+              "Guarantees a Mythical-tier Batomon pull on Day 9.",
+            bestFor:
+              "Runs that can stay alive long enough to reach the Day 9 payout window.",
+            badge: "Season 1 pick",
+          },
+          {
+            name: "The Masked Man",
+            summary:
+              "Every four days, adopts the ability of another Trainer from the current run.",
+            bestFor:
+              "Runs that want to chain two Trainer passives without committing at run start.",
+            badge: "Season 1 pick",
+          },
+          {
+            name: "The Black Belt",
+            summary:
+              "Requires exactly one Fighting-type Batomon in the squad; that unit triggers On Victory when the fight ends.",
+            bestFor:
+              "Runs whose offered hand already includes a Fighting-type carry.",
+            badge: "Season 1 pick",
+          },
+        ],
+      },
+      {
+        id: "post-110-trinket-context",
+        type: "callout",
+        tone: "tip",
+        title: "Post-1.1.0 Trinket Context",
+        body:
+          "Patch 1.1.0 reshuffled the cooldown-trinket ladder, so trinket priority must be re-read against the current build rather than carried over from pre-patch runs. The only independently verifiable post-1.1.0 trinket fact is that Alpha Crown has moved to Mythical rarity (batodex.com), which changes when it can enter the trinket cart during merges. Cooldown-trinket numeric detail and the broader 17-Batomon nerf list (including the Jinto line) stay Watch until a patch-notes citation is published.",
       },
       {
         id: "support-slots",
@@ -585,30 +720,37 @@ export const guidePages: PageContent[] = [
           {
             title: "Plan one Starter",
             body:
-              "Starter (1 slot): a Batomon that opens the fight with a buff, protect, or shield so the rest of the team survives the first round. Gaiadrasil, Dryadell, and shield-generating rocks like Bonshell fill this slot.",
+              "Starter (1 slot): a Batomon that opens the fight with a buff, protect, or shield so the rest of the team survives the first round. Gaiadrasil, Dryadell, and shield-generating rocks like Bonshell fill this slot. Maps to the Ouroblaze Burn Melt (Survivor front) and Gaiadrasil + Dryadell cores above.",
             doneCondition:
               "One Starter is in the formation and the first-round trade is survivable.",
           },
           {
             title: "Plan one or two Repeaters",
             body:
-              "Repeater (1-2 slots): fast casts, multicast, or on-ally-trigger effects that fire multiple times per turn. Pipskull and Drumire are the canonical Repeaters.",
+              "Repeater (1-2 slots): fast casts, multicast, or on-ally-trigger effects that fire multiple times per turn. Pipskull and Drumire are the canonical Repeaters. Maps to the Fire Sunsage Blixie core and the Puffloon Multicast (Season 1) archetype.",
             doneCondition:
               "A Repeater is online and its multicast or trigger chain is firing each turn.",
           },
           {
             title: "Plan one or two Amplifiers",
             body:
-              "Amplifier (1-2 slots): Batomon that boost the Repeater's actions, such as Onsetra, Rhizuka, or Dracana when paired with a shield engine.",
+              "Amplifier (1-2 slots): Batomon that boost the Repeater's actions, such as Onsetra, Rhizuka, or Dracana when paired with a shield engine. Maps to the Pylon Shock (Season 1) archetype and the Swoonet Water Flood support line.",
             doneCondition:
               "An Amplifier is connected to the Repeater and the trigger chain is scaling.",
           },
           {
             title: "Plan one Survivor",
             body:
-              "Survivor (1 slot): a tank or shield-bearer that keeps the shared HP pool alive long enough for the Repeaters and Amplifiers to scale. Fumungus, Cobrex, and Furnadon are common Survivor picks.",
+              "Survivor (1 slot): a tank or shield-bearer that keeps the shared HP pool alive long enough for the Repeaters and Amplifiers to scale. Fumungus, Cobrex, and Furnadon are common Survivor picks. Maps directly to the critcap.gg top comp Cobrex + Fumungus (Puffloon core) and to the Ouroblaze Burn Melt Survivor's front.",
             doneCondition:
               "A Survivor is holding the shared HP pool above the failure threshold in long rounds.",
+          },
+          {
+            title: "Plan an Economy slot if the run leans reroll-heavy",
+            body:
+              "Economy slot (1 slot, optional): when the run pivots toward the worldeka Season 1 Economy archetype, dedicate one slot to a gold-producing trinket chain (Arcade Coins, Gold Nugget, Piggy Bank, Fool's Gold) and pick Burglar or Scavenger as the Trainer. This slot replaces an Amplifier slot only when the rest of the board already covers the Repeater role.",
+            doneCondition:
+              "An economy trinket chain is online and reroll budget covers the planned merge steps.",
           },
         ],
       },
@@ -618,7 +760,7 @@ export const guidePages: PageContent[] = [
         tone: "tip",
         title: "Best Team Build Priorities And Common Mistakes",
         body:
-          "Build around the Trainer you picked at run start, not around a single Batomon you want to force. Choose the core from the early shop offerings (Days 1-3). If the shop does not support your planned core, pivot to whichever of Gaiadrasil, Miasmaw, Ouroblaze, Swoonet, Cairnage, or Fumungus is actually available, rather than chasing scaling items that never arrive. Plan the four late-game roles before Day 5. A team that only deals damage or only stacks shields will lose to comps that do both. Do not over-invest in one-role comps. The strongest runs in the dataset always include at least one Starter, one Repeater, and one Survivor by the second shop refresh. Treat Dracana and Onsetra as near-default slots in Season 1: their pick rates are the highest in the public data, and they slot cleanly into every S+ comp above.",
+          "Build around the Trainer you picked at run start, not around a single Batomon you want to force. Under the post-1.1.0 ladder, triangulate between Fire Sunsage (batomon.com), Cobrex+Fumungus (critcap.gg), and the worldeka Season 1 archetypes rather than anchoring on one source. Choose the core from the early shop offerings (Days 1-3). If the shop does not support your planned core, pivot to whichever of Gaiadrasil, Miasmaw, Ouroblaze, Swoonet, Cairnage, or Fumungus is actually available, rather than chasing scaling items that never arrive. Plan the four late-game roles before Day 5. A team that only deals damage or only stacks shields will lose to comps that do both. Do not over-invest in one-role comps. The strongest runs in the dataset always include at least one Starter, one Repeater, and one Survivor by the second shop refresh. Treat Dracana and Onsetra as near-default slots in Season 1: their pick rates are the highest in the public data, and they slot cleanly into every S+ comp above. Re-read trinket priority after every patch: 1.1.0 reshuffled the cooldown-trinket ladder and pushed Alpha Crown to Mythical rarity.",
       },
     ],
     faqIds: [],
@@ -630,7 +772,7 @@ export const guidePages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "official",
-    lastReviewed: "2026-10-09",
+    lastReviewed: "2026-10-13",
   },
   {
     id: "battle-strategy",
@@ -725,7 +867,7 @@ export const guidePages: PageContent[] = [
         type: "prose",
         heading: "Synergy Layers: Types And Factions",
         body:
-          "Synergies come in two layers. Types are fire, toxic, flying, rock, water, and ghost. Stacking a roster toward a type unlocks attack or defense payoffs once the threshold is met:\n\n- Toxic stacks convert into poison damage.\n- Water stacks convert into healing and sustain.\n- Rock stacks convert into shields and protective procs.\n\nFactions are organized by region in the creature roster (for example the Jinto region). A region that is under-powered, over-tuned, or simply over-represented in a given meta has historically been adjusted by the developer, including past nerfs to Jinto.\n\nSome traits act as cross-region bridges and let a roster pull in creatures from a second region to form a hybrid team, trading pure-region stacking bonuses for flexibility.",
+          "Synergies come in two layers. Types are fire, toxic, flying, rock, water, and ghost. Stacking a roster toward a type unlocks attack or defense payoffs once the threshold is met:\n\n- Toxic stacks convert into poison damage.\n- Water stacks convert into healing and sustain.\n- Rock stacks convert into shields and protective procs.\n\nFactions are organized by region in the creature roster (for example the Jinto region). A region that is under-powered, over-tuned, or simply over-represented in a given meta has historically been adjusted by the developer, including past nerfs to Jinto.\n\nSome traits act as cross-region bridges and let a roster pull in creatures from a second region to form a hybrid team, trading pure-region stacking bonuses for flexibility.\n\nUnder the post-1.1.0 ladder, the Fire (Sunsage), Water (Swoonet Flood), Rock (Fumungus + Cobrex), and Toxic (Puffloon Multicast) lines are the most-picked stacks; treat them as the default type targets when the early shop offers them.",
       },
       {
         id: "scaling-examples",
@@ -772,7 +914,7 @@ export const guidePages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "official",
-    lastReviewed: "2026-10-09",
+    lastReviewed: "2026-10-13",
   },
   {
     id: "progression-systems",

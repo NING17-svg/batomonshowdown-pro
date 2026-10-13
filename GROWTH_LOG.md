@@ -50,3 +50,13 @@ Operational diary for `batomonshowdown.pro` (site_id `batomonshowdown-pro`). Rec
 - Filled all 11 manifest keys in `src/data/ads.ts` with real Adsterra placement codes collected from `batomonshowdown.pro` (placements 31293823–31293827). Popunder, Social Bar, Banner 300x250 and Banner 160x300 were newly created; Banner 728x90 / 468x60 / 320x50, Native Banner and Smartlink were reused. Banner 468x60 and Smartlink were resubmitted once and returned to Active before code collection.
 - `npm run verify` re-run after the placeholder replacement.
 - `registry/sites.yaml` `adsterra.status` flipped to `enabled` with `target_commit` pointing at this push; the V4 ad-placement inventory is unchanged.
+
+## 2026-10-13 — Post-1.1.0 meta-comp survey update
+
+- Updated `/guides/team-builds-meta/`: added a post-1.1.0 meta-comp survey module covering Fire Sunsage (batomon.com 7.92 avg wins / 26.46% win rate) and Cobrex+Fumungus (critcap.gg 41.5% 10-win / 178 runs) alongside the worldeka Season 1 archetypes Ouroblaze Burn Melt, Pylon Shock, Swoonet Water Flood, Puffloon Multicast and Economy.
+- Added a Season 1 Trainer callout naming Ginto, The Gamer, The Masked Man and The Black Belt with the one-line effect for each.
+- Added a post-1.1.0 trinket-context block stating that the cooldown-trinket ladder changed and Alpha Crown is now Mythical (batodex.com); cooldown-trinket numeric detail and the broader 17-Batomon nerf list stay Watch.
+- Extended the 4-role build framework with cross-references to the new survey rows and an optional Economy slot for the worldeka Season 1 Economy archetype.
+- Refreshed discovery/link entries on `/`, `/guides/batomon-tier-list/`, `/guides/trainer-tier-list/` and `/guides/battle-strategy/` to reference the post-1.1.0 sources and core picks.
+- Updated `lastReviewed` to 2026-10-13 on `home`, `trainer-tier-list`, `batomon-tier-list`, `team-builds-meta`, `battle-strategy`. `CONTENT_INDEX.md` description for `team-builds-meta` now mentions the post-1.1.0 meta-comp survey.
+- Sources: `https://batomon.com/`, `https://worldeka.com/batomon-showdown-season-1-meta-teams-guide-best-builds-and-synergies`, `https://www.critcap.gg/batomon/team-comps`, `https://batodex.com/` (Alpha Crown Mythical fact).

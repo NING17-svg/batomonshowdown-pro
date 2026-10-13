@@ -72,7 +72,7 @@ export const homePage: PageContent = {
               label: "Best Team And Meta Builds",
               href: "/guides/team-builds-meta",
               description:
-                "Meta cores, standout support slots, and the 4-role build framework (Starter, Repeater, Amplifier, Survivor).",
+                "Post-1.1.0 meta-comp survey across Fire Sunsage, Cobrex+Fumungus and the worldeka Season 1 archetypes, plus the 4-role framework (Starter, Repeater, Amplifier, Survivor).",
             },
             {
               label: "Positioning And Synergies",
@@ -177,5 +177,5 @@ export const homePage: PageContent = {
   ],
   schemaTypes: ["WebSite", "CollectionPage", "FAQPage"],
   sourceStatus: "internal",
-  lastReviewed: "2026-10-09",
+  lastReviewed: "2026-10-13",
 };
