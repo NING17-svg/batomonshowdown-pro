@@ -212,9 +212,9 @@ export const guidePages: PageContent[] = [
     seoTitle:
       "Batomon Showdown Trainer Tier List: Top Picks To Choose",
     metaDescription:
-      "Batomon Showdown trainer tier list covering Burglar, Painter, Twins, Scavenger and situational picks, and how to read the three-card hand at run start.",
+      "Batomon Showdown trainer tier list covering Burglar, Painter, Twins, Scavenger and situational picks, the 1.2.0 Smuggler trainer, and how to read the three-card hand at run start.",
     summary:
-      "Which Trainers the ladder actually plays, situational picks, the 24-Trainer roster, and how to read the three-card hand at run start.",
+      "Which Trainers the ladder actually plays, situational picks, the 24-Trainer roster, the six new Jinto trainers, and the new 1.2.0 Smuggler trainer.",
     hero: {
       eyebrow: "Trainer tier list",
       subtitle:
@@ -225,12 +225,12 @@ export const guidePages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "The choice you make at run start sticks for the whole run, so read all three Trainer cards before committing. The Trainer's passive ability applies to the whole team, and the practical question is whether the passive can fire in the early turns of the run. A full strength ranking of all 24 Trainers is not publicly available; the most useful signal is the Season 1 pick rate.",
+      "The choice you make at run start sticks for the whole run, so read all three Trainer cards before committing. The Trainer's passive ability applies to the whole team, and the practical question is whether the passive can fire in the early turns of the run. The post-1.2.0 roster adds the Smuggler trainer (one foreign-region pull per run) and the six new Jinto trainers (Twins, Gentleman, Painter, Burglar, Scavenger, Black Belt) introduced when Jinto unlocked at 5 Pantra wins.",
     keyFacts: [
       { label: "Top picks", value: "Burglar · Painter · Twins · Scavenger" },
-      { label: "Situational", value: "Gentleman · Black Belt" },
+      { label: "Situational", value: "Gentleman · Black Belt · Smuggler" },
       { label: "Total roster", value: "24 Trainers" },
-      { label: "Best signal", value: "Season 1 pick rate" },
+      { label: "Jinto trainers", value: "Twins · Gentleman · Painter · Burglar · Scavenger · Black Belt" },
     ],
     modules: [
       {
@@ -302,6 +302,80 @@ export const guidePages: PageContent[] = [
           "The 24 Trainers listed in the published Batomon Showdown Trainer guide are: ??? (Mysterious Trainer), Black Belt, Bug Catcher, Burglar, Chef, Chemist, Egg Breeder, Gamer, Gentleman, Lucky Girl, Mad Scientist, Masked Man, Monster Ranger, Musician, Painter, Redhead, Rich Lady, Scavenger, Shopkeeper, Smuggler, Swim Coach, Treasure Hunter, Twins, Youngster. The detailed ability text for the less-picked Trainers is not collected in any single published sheet; check Inspect on each card at run start.",
       },
       {
+        id: "jinto-trainers",
+        type: "entity-grid",
+        heading: "Six New Jinto Trainers (Unlocked At 5 Pantra Wins)",
+        items: [
+          {
+            title: "Twins",
+            summary:
+              "When any monster reaches Level 3, the player gains an exact copy of it. Best in build-defining runs where one core reliably hits Level 3.",
+            badge: "Jinto",
+          },
+          {
+            title: "Gentleman",
+            summary:
+              "From Day 4 onward, Common and Uncommon monsters are removed from the shop. Niche pick that needs the rest of the offered hand to lean Rare or Legendary from the start.",
+            badge: "Jinto",
+          },
+          {
+            title: "Painter",
+            summary:
+              "Paints a random species with various types for the run. Used to build unusual type synergies, especially around Batomon whose abilities scale with the number of types they have.",
+            badge: "Jinto",
+          },
+          {
+            title: "Burglar (6.7% Season 1 pick rate)",
+            summary:
+              "When a trinket gift appears, takes two trinkets instead of one. Doubles trinket income and shifts the build toward trinket-heavy compositions. The Jinto Burglar retains the same passive and the 6.7% popularity rank carries over from the Season 1 dataset.",
+            badge: "Jinto top pick",
+          },
+          {
+            title: "Scavenger",
+            summary:
+              "When a trinket gift appears, gives an extra copy of every non-unique Common or Uncommon trinket the squad already owns. Converts low-rarity trinkets into a stacking engine.",
+            badge: "Jinto",
+          },
+          {
+            title: "Black Belt",
+            summary:
+              "Causes a single Fighting-type monster to trigger On Victory. Niche pick that requires the offered Fighting monster to actually land on Victory.",
+            badge: "Jinto",
+          },
+        ],
+      },
+      {
+        id: "patch-120-trainer-balance",
+        type: "entity-grid",
+        heading: "1.2.0 Trainer Balance Adjustments",
+        items: [
+          {
+            title: "Smuggler (new)",
+            summary:
+              "Once per run, the Smuggler trainer pulls one Batomon from a foreign region. Cordycant and Sproach are the published foreign options; the pull becomes a sixth slot rather than a build-around.",
+            badge: "New",
+          },
+          {
+            title: "Chemist +1 to +3 Poison",
+            summary:
+              "Chemist's Poison-trigger bonus moves from +1 to +3 per proc. The trainer now meaningfully scales with Miasmaw-style poison-spread engines.",
+            badge: "Buff",
+          },
+          {
+            title: "Redhead Burn-per-win to Fire +2 to +3",
+            summary:
+              "Redhead's Burn-per-win scaling is removed and replaced with a flat +2 to +3 Fire bonus. Pairs cleanly with the 1.2.0 Pantra burn line (Cinderfly, Thorntail, Noxnimbus).",
+            badge: "Rework",
+          },
+          {
+            title: "Gamer Mythical reveal",
+            summary:
+              "Gamer now reveals Mythical Batomon on the first shop refresh. Trades the Gamer run-time gamble for an information advantage at run start.",
+            badge: "Rework",
+          },
+        ],
+      },
+      {
         id: "economy-tier",
         type: "callout",
         tone: "tip",
@@ -319,7 +393,7 @@ export const guidePages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "official",
-    lastReviewed: "2026-10-09",
+    lastReviewed: "2026-10-13",
   },
   {
     id: "batomon-tier-list",
@@ -334,67 +408,215 @@ export const guidePages: PageContent[] = [
     seoTitle:
       "Batomon Showdown Tier List: Top Batomon And Cores Today",
     metaDescription:
-      "Batomon Showdown tier list covering the highest pick-rate Batomon, the S+ 10-win cores, standout individuals and how to use the tier list when building a squad.",
+      "Batomon Showdown tier list covering the highest pick-rate Batomon, the post-1.2.0 S+ cores (Dracana, Cinnabark, Velocect), the Pantra burn line, the Smuggler foreign options, the Jinto region roster, and how to use the tier list when building a squad.",
     summary:
-      "Highest pick-rate Batomon, the S+ 10-win cores, standout individuals, and how the community reads strength when no developer tier list exists.",
+      "Post-1.2.0 S+ cores (Dracana, Cinnabark, Velocect), standout individuals, the Pantra burn line, the Smuggler foreign options, and the Jinto roster with its 5-Pantra-win unlock gate.",
     hero: {
       eyebrow: "Batomon tier list",
       subtitle:
-        "There is no official developer tier list; the community reads 30-day pick rate and 10-win rate instead.",
+        "There is no official developer tier list; the community reads 30-day pick rate and 10-win rate instead. The 1.2.0 (Smuggler) patch moved the S+ list to Dracana, Cinnabark, and Velocect.",
       ctas: [
         { label: "Trainer Tier List", href: "/guides/trainer-tier-list" },
         { label: "Best Team & Meta", href: "/guides/team-builds-meta" },
       ],
     },
     quickAnswer:
-      "There is no officially published Batomon strength tier (S/A/B/C) from the developers. The community uses 30-day pick rate and 10-win rate as the practical proxy for the current meta, and what players actually track is which comps climb the 10-win ladder rather than a single Batomon ranking.",
+      "There is no officially published Batomon strength tier (S/A/B/C) from the developers. The community uses 30-day pick rate and 10-win rate as the practical proxy for the current meta, and what players actually track is which comps climb the 10-win ladder rather than a single Batomon ranking. Post-1.2.0 the S+ cores are Dracana (61.4% over 58 runs), Cinnabark (51.8% over 128 runs) and Velocect (43.5% over 99 runs); the new Pantra burn line and Smuggler foreign pulls (Cordycant, Sproach) round out the post-1.2.0 tier. The Jinto region unlocks at 5 Pantra wins and adds 50+ Batomon plus six new trainers.",
     keyFacts: [
-      { label: "Most picked", value: "Dracana 17.4% · Steamscuttle 15.0%" },
-      { label: "S+ core", value: "Gaiadrasil + Dryadell 62.2% 10-win" },
-      { label: "Sample size", value: "4,932 public matches" },
-      { label: "Rarity tiers", value: "Common · Uncommon · Legendary" },
+      { label: "Most picked", value: "Dracana 16.0% · Onsetra 11.7%" },
+      { label: "S+ core", value: "Dracana 61.4% / Cinnabark 51.8% / Velocect 43.5% 10-win" },
+      { label: "Sample size", value: "4,901 boards post-1.2.0 (Critcap)" },
+      { label: "Rarity tiers", value: "Common · Uncommon · Legendary · Mythical" },
     ],
     modules: [
       {
         id: "highest-pick-rate",
         type: "data-table",
-        heading: "Highest Pick-Rate Batomon (30-Day)",
+        heading: "Highest Pick-Rate Batomon (Post-1.2.0, 30-Day)",
         columns: [
           { key: "rank", label: "#" },
           { key: "name", label: "Batomon" },
           { key: "rate", label: "Pick rate (30-day)" },
         ],
         rows: [
-          { rank: "1", name: "Dracana", rate: "17.4%" },
-          { rank: "2", name: "Steamscuttle", rate: "15.0%" },
-          { rank: "3", name: "Onsetra", rate: "12.9%" },
-          { rank: "4", name: "Swoonet", rate: "11.6%" },
-          { rank: "5", name: "Furnadon", rate: "9.9%" },
-          { rank: "6", name: "Saberhorn", rate: "9.8%" },
+          { rank: "1", name: "Dracana", rate: "16.0%" },
+          { rank: "2", name: "Onsetra", rate: "11.7%" },
+          { rank: "3", name: "Steamscuttle", rate: "11.1%" },
+          { rank: "4", name: "Swoonet", rate: "10.5%" },
+          { rank: "5", name: "Velocect", rate: "9.9%" },
+          { rank: "6", name: "Furnadon", rate: "9.3%" },
         ],
       },
       {
         id: "top-cores",
         type: "entity-grid",
-        heading: "Top 10-Win-Rate Cores",
+        heading: "Post-1.2.0 S+ And S Cores",
         items: [
           {
-            title: "Gaiadrasil + Dryadell (Onsetra core)",
+            title: "Dracana (S+, 61.4% over 58 runs)",
             summary:
-              "62.2% 10-win rate across 45 games. Typically paired with Onsetra, Thorntail, Panbud, and Dracana.",
-            badge: "62.2% 10-win",
+              "Dracana + Gaiadrasil + Dryadell + Onsetra. The 1.2.0 highest 10-win finish rate in the dataset.",
+            badge: "S+ core",
           },
           {
-            title: "Miasmaw + Drumire (Cinnabark core)",
+            title: "Cinnabark (S+, 51.8% over 128 runs)",
             summary:
-              "50.0% 10-win rate across 116 games. Typically paired with Onsetra, Vipair, and Dracana.",
-            badge: "50.0% 10-win",
+              "Miasmaw + Drumire + Cinnabark. Returns to S+ via the 1.2.0 Cinnabark CD 5 to 4 and Drumire cost 50 to 45 reverts.",
+            badge: "S+ core",
           },
           {
-            title: "Ouroblaze + Furnadon (Steamscuttle core)",
+            title: "Velocect (S, 43.5% over 99 runs)",
             summary:
-              "45.3% 10-win rate across 139 games. Typically paired with Onsetra, Snapscald, and Rubbin.",
-            badge: "45.3% 10-win",
+              "Cicadence + Formiqueen + Velocect. The Repeater-and-Amplifier pair scales Velocect into the S tier.",
+            badge: "S core",
+          },
+        ],
+      },
+      {
+        id: "pantra-burn-line",
+        type: "entity-grid",
+        heading: "1.2.0 Pantra Burn Line (Buff Targets)",
+        items: [
+          {
+            title: "Cinderfly (cost 30 to 25, Burn 6 to 7)",
+            summary:
+              "Third copy now affordable by Day 3; Burn 6 to 7 closes the burn engine's single-tick deficit.",
+            badge: "Pantra",
+          },
+          {
+            title: "Thorntail (damage-per-Poison 6/12/18 to 8/16/24)",
+            summary:
+              "Each Poison stack adds 2 more damage per tick at 1/2/3 stacks.",
+            badge: "Pantra",
+          },
+          {
+            title: "Noxnimbus (Poison-to-adjacent 2/4/6 to 3/6/9)",
+            summary:
+              "Adjacent Poison rider jumps from 2/4/6 to 3/6/9; turns Noxnimbus into a Pantra S-tier support.",
+            badge: "Pantra",
+          },
+        ],
+      },
+      {
+        id: "smuggler-foreign",
+        type: "entity-grid",
+        heading: "Smuggler Foreign Options",
+        items: [
+          {
+            title: "Cordycant",
+            summary:
+              "Pulled from the foreign region by the Smuggler trainer. Treat as a sixth slot rather than a build-around.",
+            badge: "Cross-region",
+          },
+          {
+            title: "Sproach",
+            summary:
+              "Pulled from the foreign region by the Smuggler trainer. Pairs with the rest of the squad if the trigger lines up.",
+            badge: "Cross-region",
+          },
+        ],
+      },
+      {
+        id: "jinto-region",
+        type: "prose",
+        heading: "Jinto Region (Unlocked At 5 Pantra Wins)",
+        body:
+          "Jinto is the second Batomon region, unlocked after the player records 5 Pantra wins. The unlock adds 50+ Jinto Batomon and six new trainers (Twins, Gentleman, Painter, Burglar, Scavenger, Black Belt). The full roster covered by the official Batomon Showdown wiki: Rattleghast, Petrirex, Ginsage, Ninflora, Brimtoad, Sukoi, Dollhime, Mallogre, Orcana, Tengusto, Danuki, Snapscald, Lumijel, Ouroblaze, Cinnabark, Drumire, Pipskull, Cairnage, Opalion, Nekoffin, Vengrieve, Cawnushi, Shrinell, Shikitsune, Emburn, Bonshell, Steamscuttle. Even after the 1.1.0 and 1.2.0 Jinto carry nerfs, Jinto runs still produce roughly 1.5x Pantra median DPS at day 10+.\n\nPost-1.2.0 Jinto nerf ladder: Petrirex, Nekoffin, Cairnage, Opalion nerfed from top DPS carry into S-tier; Ninflora, Cawnushi, Shrinell nerfed into A-tier; Shikitsune, Emburn, Bonshell, Steamscuttle nerfed into B-tier; Vengrieve nerfed into C-tier. The Cinnabark CD 5 to 4 and Drumire cost 50 to 45 reverts bring two of the Jinto carries back into the S+ window.",
+      },
+      {
+        id: "jinto-roster-grid",
+        type: "entity-grid",
+        heading: "Jinto Roster And Post-1.2.0 Tier",
+        items: [
+          {
+            title: "Cinnabark (S+, revert)",
+            summary:
+              "Returns to S+ via the 1.2.0 CD 5 to 4 revert. Center of the Miasmaw + Drumire core.",
+            badge: "S+",
+          },
+          {
+            title: "Drumire (S+, revert)",
+            summary:
+              "Returns to S+ via the 1.2.0 cost 50 to 45 revert. The Repeater of the Cinnabark core.",
+            badge: "S+",
+          },
+          {
+            title: "Petrirex (S, nerfed)",
+            summary:
+              "Top DPS carry before 1.2.0; nerfed into S-tier. Still worth building around when the shop offers it.",
+            badge: "S",
+          },
+          {
+            title: "Nekoffin (S, nerfed)",
+            summary:
+              "Top DPS carry before 1.2.0; nerfed into S-tier. Pairs with shield-heavy support.",
+            badge: "S",
+          },
+          {
+            title: "Cairnage (S, nerfed)",
+            summary:
+              "Top DPS carry before 1.2.0; nerfed into S-tier. Strong variance pick when the shop supports it.",
+            badge: "S",
+          },
+          {
+            title: "Opalion (S, nerfed)",
+            summary:
+              "Top DPS carry before 1.2.0; nerfed into S-tier. Pairs with Cairnage for the Season 1 59% line.",
+            badge: "S",
+          },
+          {
+            title: "Ninflora (A, nerfed)",
+            summary:
+              "Was S-tier pre-1.2.0; now A-tier. Still a strong support pick.",
+            badge: "A",
+          },
+          {
+            title: "Cawnushi (A, nerfed)",
+            summary:
+              "Was S-tier pre-1.2.0; now A-tier.",
+            badge: "A",
+          },
+          {
+            title: "Shrinell (A, nerfed)",
+            summary:
+              "Was S-tier pre-1.2.0; now A-tier.",
+            badge: "A",
+          },
+          {
+            title: "Bonshell (B, nerfed)",
+            summary:
+              "Was A-tier pre-1.2.0; now B-tier. Still safe as an early-game carry.",
+            badge: "B",
+          },
+          {
+            title: "Steamscuttle (B, nerfed)",
+            summary:
+              "Was A-tier pre-1.2.0; now B-tier. Bridges into the post-1.2.0 Pantra burn line.",
+            badge: "B",
+          },
+          {
+            title: "Shikitsune (B, nerfed)",
+            summary:
+              "Was A-tier pre-1.2.0; now B-tier.",
+            badge: "B",
+          },
+          {
+            title: "Emburn (B, nerfed)",
+            summary:
+              "Was A-tier pre-1.2.0; now B-tier.",
+            badge: "B",
+          },
+          {
+            title: "Vengrieve (C, nerfed)",
+            summary:
+              "Was B-tier pre-1.2.0; now C-tier. Skip unless the run needs the type coverage.",
+            badge: "C",
+          },
+          {
+            title: "Cordycant, Sproach (Smuggler foreign)",
+            summary:
+              "Pulled from the foreign region by the Smuggler trainer. Treat as a sixth slot.",
+            badge: "Cross-region",
           },
         ],
       },
@@ -403,7 +625,7 @@ export const guidePages: PageContent[] = [
         type: "prose",
         heading: "Season 1 Numbers From gamesfuze",
         body:
-          "Season 1 data from gamesfuze shows the same Miasmaw + Drumire comp at the S+ tier, with Cairnage + Opalion at 59% 10-win rate, Fumungus + Cobrex at 55% 10-win rate, and Swoonet + Snapscald at 49% 10-win rate as additional strong ladders.\n\nThe 62.2% Gaiadrasil + Dryadell core only holds when its full support package (Onsetra, Thorntail, Panbud, Dracana) is also available. Without that package the core falls back toward the 45-50% range of the other S+ comps.",
+          "Season 1 data from gamesfuze showed Cairnage + Opalion at 59% 10-win rate and Fumungus + Cobrex at 55% 10-win rate. Both lines still appear in the post-1.2.0 data but the 1.2.0 carry nerfs pulled them out of the S+ tier; they now live in the A / B band of the Jinto roster above.",
       },
       {
         id: "standout-units",
@@ -419,7 +641,7 @@ export const guidePages: PageContent[] = [
           {
             title: "Bonshell (rock)",
             summary:
-              "Its early upgrade gives both extra damage and a shield, making it one of the safest early-game carries.",
+              "Its early upgrade gives both extra damage and a shield, making it one of the safest early-game carries. Note the 1.2.0 nerf moves it from A-tier into B-tier.",
             badge: "Starter",
           },
           {
@@ -427,6 +649,18 @@ export const guidePages: PageContent[] = [
             summary:
               "Gains bonus damage whenever an ally applies a shield, so it scales naturally with shield-heavy comps.",
             badge: "Amplifier",
+          },
+          {
+            title: "Gaiadrasil + Dryadell",
+            summary:
+              "The shared-HP backbone of the post-1.2.0 S+ Dracana core. Feed both copies to level 3 before pivoting the rest of the squad.",
+            badge: "S+ support",
+          },
+          {
+            title: "Cicadence + Formiqueen",
+            summary:
+              "The Repeater and Amplifier of the post-1.2.0 S Velocect core.",
+            badge: "S support",
           },
         ],
       },
@@ -455,7 +689,7 @@ export const guidePages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "official",
-    lastReviewed: "2026-10-09",
+    lastReviewed: "2026-10-13",
   },
   {
     id: "team-builds-meta",
@@ -470,9 +704,9 @@ export const guidePages: PageContent[] = [
     seoTitle:
       "Batomon Showdown Best Team: Meta Builds And 4-Role Guide",
     metaDescription:
-      "Batomon Showdown best team and meta build guide covering S+ cores, standout support slots, the 4-role framework, and how to pivot from the early shop.",
+      "Batomon Showdown best team and meta build guide covering post-1.2.0 S+ cores (Dracana, Cinnabark, Velocect), the Pantra burn line, the Smuggler cross-region comp, and the 4-role framework.",
     summary:
-      "Meta cores, standout support slots, the 4-role build framework, and how to pivot from the early shop without breaking the run.",
+      "Post-1.2.0 S+ cores (Dracana, Cinnabark, Velocect), the Pantra burn line, the Smuggler cross-region comp, and the 4-role build framework.",
     hero: {
       eyebrow: "Best team and meta builds",
       subtitle:
@@ -483,97 +717,103 @@ export const guidePages: PageContent[] = [
       ],
     },
     quickAnswer:
-      "A run ends when you defeat 10 NPC trainers and collect 10 badges. Teams are built by picking a Trainer, choosing a core pair of Batomon to anchor the early game, then filling the remaining slots around four late-game roles. The current top cores come from 30-day public match data on batomon.com and Season 1 coverage on gamesfuze.",
+      "Under the post-1.2.0 (Smuggler) balance the three top comps are the S+ Dracana core (Gaiadrasil + Dryadell, 61.4% over 58 runs), the S+ Cinnabark core (Miasmaw + Drumire, 51.8% over 128 runs) and the S Velocect core (Cicadence + Formiqueen, 43.5% over 99 runs). Around those the Pantra burn line (Cinderfly, Thorntail, Noxnimbus) and the Smuggler cross-region comp (Cordycant or Sproach pulled from a foreign region) give the run its post-1.2.0 identity.",
     keyFacts: [
-      { label: "Top core", value: "Gaiadrasil + Dryadell · 62.2% 10-win" },
-      { label: "Most-picked slot", value: "Dracana 17.4%" },
+      { label: "S+ core", value: "Dracana · 61.4% 10-win over 58 runs" },
+      { label: "S+ core", value: "Cinnabark · 51.8% 10-win over 128 runs" },
+      { label: "S core", value: "Velocect · 43.5% 10-win over 99 runs" },
       { label: "Late-game frame", value: "Starter / Repeater / Amplifier / Survivor" },
-      { label: "Source", value: "batomon.com 30-day + Season 1 gamesfuze" },
     ],
     modules: [
       {
         id: "meta-cores",
         type: "entity-grid",
-        heading: "Meta Cores And S+ Comps",
+        heading: "Post-1.2.0 S+ And S Cores",
         items: [
           {
-            title: "Gaiadrasil + Dryadell (Onsetra core)",
+            title: "Dracana (S+, 61.4% over 58 runs)",
             summary:
-              "62.2% 10-win rate. The strongest core in the dataset. Typical partners are Onsetra, Thorntail, Panbud, and Dracana. Gaiadrasil and Dryadell feed the shared HP pool while Onsetra and Dracana add scaling damage and shield pressure.",
-            badge: "62.2% 10-win",
+              "Highest 10-win finish rate in the post-1.2.0 sample. The Dracana engine rides the Onsetra core with Gaiadrasil + Dryadell as the shared-HP backbone. Shield pressure plus on-cast scaling makes it the safest S+ slot in the dataset.",
+            badge: "S+ core",
           },
           {
-            title: "Miasmaw + Drumire (Cinnabark core)",
+            title: "Cinnabark (S+, 51.8% over 128 runs)",
             summary:
-              "50.0% 10-win rate. Common partners are Onsetra, Vipair, and Dracana. Use this core when the early shop offers Cinnabark-type items or when Miasmaw's poison-spread lines up with Drumire's payoff casts.",
-            badge: "50.0% 10-win",
+              "Returned to the top tier by the 1.2.0 revert (CD 5 to 4). The Cinnabark core runs Miasmaw + Drumire with Cinnabark at the center; the Drumire cost 50 to 45 revert lets the run hit the third Drumire copy by Day 4 in most openings.",
+            badge: "S+ core",
           },
           {
-            title: "Ouroblaze + Furnadon (Steamscuttle core)",
+            title: "Velocect (S, 43.5% over 99 runs)",
             summary:
-              "45.3% 10-win rate. Common partners are Onsetra, Snapscald, and Rubbin. Strong when the run can stabilize the shop around steam and burn items by mid-game.",
-            badge: "45.3% 10-win",
+              "The Velocect core pairs Cicadence + Formiqueen and thrives when the early shop offers multicast support. Sample size is large enough (99 runs) that the 43.5% line is the floor, not the ceiling.",
+            badge: "S core",
           },
           {
-            title: "Swoonet + Snapscald (Steamscuttle, Season 1)",
+            title: "Pantra burn line (Cinderfly, Thorntail, Noxnimbus)",
             summary:
-              "49% 10-win rate, the most-played comp in Season 1 at 235 tracked games. Same support package as the Ouroblaze line.",
-            badge: "49% 10-win",
+              "Built around the 1.2.0 Pantra buffs. Cinderfly cost 30 to 25 and Burn 6 to 7, Thorntail damage per Poison stack 6/12/18 to 8/16/24, Noxnimbus Poison-to-adjacent 2/4/6 to 3/6/9. Pair with a Burn enabler for the burn engine to fire on the same turn.",
+            badge: "Pantra line",
           },
           {
-            title: "Cairnage + Opalion (Season 1)",
+            title: "Smuggler cross-region comp (Cordycant, Sproach)",
             summary:
-              "59% 10-win rate. Higher variance but top-end payoff when the early shop supports it.",
-            badge: "59% 10-win",
-          },
-          {
-            title: "Fumungus + Cobrex (Puffloon core, Season 1)",
-            summary:
-              "55% 10-win rate. The fungus/spore package multiplies shields and survivability on the shared pool.",
-            badge: "55% 10-win",
+              "The new Smuggler trainer pulls one foreign-region Batomon per run. Cordycant and Sproach are the published foreign options; pick whichever matches the early shop, then build the rest of the squad around its trigger.",
+            badge: "Cross-region",
           },
         ],
       },
       {
         id: "support-slots",
         type: "entity-grid",
-        heading: "Standout Support Slots",
+        heading: "Post-1.2.0 Support Slots",
         items: [
           {
-            title: "Dracana (17.4% pick rate)",
+            title: "Dracana (16.0% post-1.2.0)",
             summary:
-              "The most-picked Batomon over the 30-day window. Fits into every S+ comp listed above.",
+              "Still the most-picked Batomon across the 4,901-board window after the Smuggler patch. Fits into the S+ Dracana core directly and slots into the Velocect engine as an on-cast rider.",
             badge: "Most-picked",
           },
           {
-            title: "Onsetra",
+            title: "Onsetra (11.7% post-1.2.0)",
             summary:
-              "Very high pick rate, the default connector for Onsetra, Steamscuttle, and Cinnabark cores.",
+              "Default connector for the Dracana and Velocect cores. Pair with a shield engine for the on-cast scaling to fire reliably.",
             badge: "Connector",
           },
           {
-            title: "Pipskull (common, ghost)",
+            title: "Steamscuttle (11.1%)",
             summary:
-              "Multicast scaling increases with each KO. A top pick for the Repeater role in the late game.",
-            badge: "Repeater",
-          },
-          {
-            title: "Bonshell (rock)",
-            summary:
-              "Once it evolves, its cast deals damage and grants a shield, useful for both the Amplifier and Survivor roles.",
-            badge: "Hybrid",
-          },
-          {
-            title: "Rhizuka (rock)",
-            summary:
-              "Attacks trigger whenever a teammate applies a shield, which pairs naturally with shield-generating cores like Puffloon.",
-            badge: "Amplifier",
-          },
-          {
-            title: "Steamscuttle",
-            summary:
-              "Anchors both the Swoonet and Ouroblaze steam lines.",
+              "Anchors the Steamscuttle line and bridges into the post-1.2.0 Pantra burn line as a survivability slot.",
             badge: "Anchor",
+          },
+          {
+            title: "Gaiadrasil + Dryadell",
+            summary:
+              "The shared-HP backbone of the S+ Dracana core. Feed both copies to level 3 before pivoting the rest of the squad.",
+            badge: "S+ support",
+          },
+          {
+            title: "Miasmaw + Drumire",
+            summary:
+              "The Cinnabark core's engine. Drumire cost 50 to 45 revert plus Cinnabark CD 5 to 4 revert makes this the cleanest pay-off comp on the post-1.2.0 ladder.",
+            badge: "S+ support",
+          },
+          {
+            title: "Cicadence + Formiqueen",
+            summary:
+              "The Velocect core's Repeater and Amplifier pair. Cicadence produces the multicast window; Formiqueen turns it into scaling damage.",
+            badge: "S support",
+          },
+          {
+            title: "Cinderfly, Thorntail, Noxnimbus",
+            summary:
+              "Pantra burn line. Pick whichever burn enabler the early shop offers first, then pivot the other two as the run matures.",
+            badge: "Pantra",
+          },
+          {
+            title: "Cordycant, Sproach",
+            summary:
+              "Smuggler foreign options pulled from Jinto or Pantra. Treat the pull as a sixth slot rather than a build-around.",
+            badge: "Cross-region",
           },
         ],
       },
@@ -613,12 +853,19 @@ export const guidePages: PageContent[] = [
         ],
       },
       {
+        id: "1-2-0-buff-nerf-math",
+        type: "prose",
+        heading: "Why These Cores Are S+ Now: The 1.2.0 Math",
+        body:
+          "Critcap tracks 4,901 boards at Balance 25 after the Smuggler update. The 1.2.0 buff/nerf math that produces the new S+ list:\n\n- Dracana core climbs to 61.4% over 58 runs because no Pantra carry was nerfed into its trigger chain. Dracana (16.0%) plus Onsetra (11.7%) plus Steamscuttle (11.1%) cover the same Starts / Repeats / On Cast Batomon engine that the S+ slots need.\n- Cinnabark climbs back to 51.8% over 128 runs from the two reverts: Cinnabark CD 5 to 4 and Drumire cost 50 to 45. The third Drumire copy now lands by Day 4 in most openings, and the CD revert lets Cinnabark fire on the same turn as the cast window opens.\n- Velocect holds 43.5% over 99 runs even after the Jinto carry nerfs because Cicadence and Formiqueen never depended on the nerfed carries.\n- The Pantra burn line (Cinderfly / Thorntail / Noxnimbus) is unlocked by the burn-side buffs alone. Cinderfly cost 30 to 25 makes the third copy affordable; Thorntail damage-per-Poison 6/12/18 to 8/16/24 and Noxnimbus Poison-to-adjacent 2/4/6 to 3/6/9 make the burn engine actually close fights.\n- The Smuggler cross-region comp is built by taking the new Smuggler trainer at run start and using Cordycant or Sproach (the foreign pull) as a sixth slot rather than a build-around.",
+      },
+      {
         id: "priorities-and-mistakes",
         type: "callout",
         tone: "tip",
         title: "Best Team Build Priorities And Common Mistakes",
         body:
-          "Build around the Trainer you picked at run start, not around a single Batomon you want to force. Choose the core from the early shop offerings (Days 1-3). If the shop does not support your planned core, pivot to whichever of Gaiadrasil, Miasmaw, Ouroblaze, Swoonet, Cairnage, or Fumungus is actually available, rather than chasing scaling items that never arrive. Plan the four late-game roles before Day 5. A team that only deals damage or only stacks shields will lose to comps that do both. Do not over-invest in one-role comps. The strongest runs in the dataset always include at least one Starter, one Repeater, and one Survivor by the second shop refresh. Treat Dracana and Onsetra as near-default slots in Season 1: their pick rates are the highest in the public data, and they slot cleanly into every S+ comp above.",
+          "Build around the Trainer you picked at run start, not around a single Batomon you want to force. Choose the core from the early shop offerings (Days 1-3). If the shop does not support your planned core, pivot to whichever of Dracana, Cinnabark, Velocect, or the Pantra burn line is actually available rather than chasing scaling items that never arrive. Plan the four late-game roles before Day 5. A team that only deals damage or only stacks shields will lose to comps that do both. Do not over-invest in one-role comps. The strongest runs in the dataset always include at least one Starter, one Repeater, and one Survivor by the second shop refresh. Treat Dracana and Onsetra as near-default slots in Season 1 plus 1.2.0: their pick rates are still the highest in the public data, and they slot cleanly into every S+ comp above. The Smuggler trainer is the strongest cross-region option because it lets you pull Cordycant or Sproach from the other region for free.",
       },
     ],
     faqIds: [],
@@ -630,7 +877,7 @@ export const guidePages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "official",
-    lastReviewed: "2026-10-09",
+    lastReviewed: "2026-10-13",
   },
   {
     id: "battle-strategy",
@@ -787,25 +1034,25 @@ export const guidePages: PageContent[] = [
     seoTitle:
       "Batomon Showdown Trinkets Guide: Economy & 93 Trinket Pool",
     metaDescription:
-      "Batomon Showdown trinkets guide covering the 93-trinket pool, the 40-item shop pool, the merge-to-trinket loop, and which Trainers bend the in-run economy.",
+      "Batomon Showdown trinkets guide covering the 93-trinket pool, the 40-item shop pool, the merge-to-trinket loop, the post-1.1.0 cooldown ladder, the 1.2.0 (Smuggler) balance pass, and which Trainers bend the in-run economy.",
     summary:
-      "How trinkets are earned, the 93 trinket pool, the 40-item shop pool, the merge-to-trinket economy loop, and which Trainers bend it.",
+      "How trinkets are earned, the 93 trinket pool, the 40-item shop pool, the merge-to-trinket economy loop, the post-1.1.0 cooldown ladder, and the 1.2.0 (Smuggler) balance pass.",
     hero: {
       eyebrow: "Trinkets and economy",
       subtitle:
-        "Two intertwined loops drive progression: merging Batomon for trinkets and spending in-run gold on shop rerolls, items, and coupons.",
+        "Two intertwined loops drive progression: merging Batomon for trinkets and spending in-run gold on shop rerolls, items, and coupons. The 1.2.0 (Smuggler) patch sits on top of the existing 1.1.0 cooldown ladder.",
       ctas: [
         { label: "Trainer Tier List", href: "/guides/trainer-tier-list" },
         { label: "Multiplayer & Ranked", href: "/guides/multiplayer-ranked" },
       ],
     },
     quickAnswer:
-      "Progression in Batomon Showdown runs on two intertwined loops: the merging of Batomon copies (which hands the squad trinkets and stat boosts) and the in-run gold spent on shop rerolls, daily purchases and coupon-style items. The full trinket pool has 93 entries grouped by function rather than by rarity, and the in-run shop pulls from a 40-item pool whose effects mostly bend rerolls, gold income or cooldown.",
+      "Progression in Batomon Showdown runs on two intertwined loops: the merging of Batomon copies (which hands the squad trinkets and stat boosts) and the in-run gold spent on shop rerolls, daily purchases and coupon-style items. The full trinket pool has 93 entries grouped by function rather than by rarity, and the in-run shop pulls from a 40-item pool whose effects mostly bend rerolls, gold income or cooldown. The 1.2.0 (Smuggler) update adds the Smuggler trainer, reworks the Pantra burn line, reverts Cinnabark and Drumire, nerfs the Jinto carry ladder, adjusts Chemist / Redhead / Gamer, removes Zenith Stone double-dip, lowers Crimson Ticket cost, and widens the Dragon Egg pool to Ouroblaze / Tsunamere / Stellagon.",
     keyFacts: [
       { label: "Trinket pool", value: "93 entries" },
       { label: "Item pool", value: "40 shop entries" },
       { label: "Trinket timings", value: "On Cast / On Battle Start / On Bought / Ongoing / On Victory" },
-      { label: "Economy trainers", value: "Burglar · Scavenger" },
+      { label: "Economy trainers", value: "Burglar · Scavenger · Smuggler" },
     ],
     modules: [
       {
@@ -958,6 +1205,145 @@ export const guidePages: PageContent[] = [
         ],
       },
       {
+        id: "patch-120-smuggler",
+        type: "prose",
+        heading: "Patch 1.2.0 (Smuggler, 2026-09-30)",
+        body:
+          "The Smuggler update sits on top of the post-1.1.0 cooldown-trinket ladder and the Alpha Crown Mythical-tier note. The changes players care about for progression:",
+      },
+      {
+        id: "patch-120-trainer",
+        type: "entity-grid",
+        heading: "1.2.0 Trainer Changes",
+        items: [
+          {
+            title: "Smuggler (new)",
+            summary:
+              "Once per run, the Smuggler trainer pulls one Batomon from a foreign region. Cordycant and Sproach are the published foreign options; the pull becomes a sixth slot rather than a build-around.",
+            badge: "New",
+          },
+          {
+            title: "Chemist +1 to +3 Poison",
+            summary:
+              "Chemist's Poison-trigger bonus moves from +1 to +3 per proc. The trainer now meaningfully scales with Miasmaw-style poison-spread engines.",
+            badge: "Buff",
+          },
+          {
+            title: "Redhead Burn-per-win to Fire +2 to +3",
+            summary:
+              "Redhead's Burn-per-win scaling is removed and replaced with a flat +2 to +3 Fire bonus. Pairs cleanly with the 1.2.0 Pantra burn line (Cinderfly, Thorntail, Noxnimbus).",
+            badge: "Rework",
+          },
+          {
+            title: "Gamer Mythical reveal",
+            summary:
+              "Gamer now reveals Mythical Batomon on the first shop refresh. Trades the Gamer run-time gamble for an information advantage at run start.",
+            badge: "Rework",
+          },
+        ],
+      },
+      {
+        id: "patch-120-jinto-nerf-ladder",
+        type: "data-table",
+        heading: "1.2.0 Jinto Carry Nerf Ladder",
+        columns: [
+          { key: "name", label: "Carry" },
+          { key: "before", label: "Pre-1.2.0" },
+          { key: "after", label: "Post-1.2.0" },
+        ],
+        rows: [
+          { name: "Petrirex", before: "Top DPS carry", after: "Nerfed into S-tier" },
+          { name: "Nekoffin", before: "Top DPS carry", after: "Nerfed into S-tier" },
+          { name: "Cairnage", before: "Top DPS carry", after: "Nerfed into S-tier" },
+          { name: "Opalion", before: "Top DPS carry", after: "Nerfed into S-tier" },
+          { name: "Ninflora", before: "S-tier", after: "Nerfed into A-tier" },
+          { name: "Cawnushi", before: "S-tier", after: "Nerfed into A-tier" },
+          { name: "Shrinell", before: "S-tier", after: "Nerfed into A-tier" },
+          { name: "Shikitsune", before: "A-tier", after: "Nerfed into B-tier" },
+          { name: "Emburn", before: "A-tier", after: "Nerfed into B-tier" },
+          { name: "Bonshell", before: "A-tier", after: "Nerfed into B-tier" },
+          { name: "Steamscuttle", before: "A-tier", after: "Nerfed into B-tier" },
+          { name: "Vengrieve", before: "B-tier", after: "Nerfed into C-tier" },
+        ],
+      },
+      {
+        id: "patch-120-pantra-buffs",
+        type: "entity-grid",
+        heading: "1.2.0 Pantra Burn Line Buffs",
+        items: [
+          {
+            title: "Cinderfly cost 30 to 25, Burn 6 to 7",
+            summary:
+              "Cost cut lets the third copy land by Day 3 in most openings; Burn 6 to 7 closes the burn engine's single-tick deficit against shield-heavy teams.",
+            badge: "Buff",
+          },
+          {
+            title: "Thorntail damage-per-Poison 6/12/18 to 8/16/24",
+            summary:
+              "Each Poison stack adds 2 more damage per tick at 1/2/3 stacks. Stack Thorntail behind Miasmaw or Noxnimbus for the burn engine to spike.",
+            badge: "Buff",
+          },
+          {
+            title: "Noxnimbus Poison-to-adjacent 2/4/6 to 3/6/9",
+            summary:
+              "Adjacent Poison rider jumps from 2/4/6 to 3/6/9. The change is what turns Noxnimbus into a Pantra S-tier support rather than a B-tier filler.",
+            badge: "Buff",
+          },
+        ],
+      },
+      {
+        id: "patch-120-reverts",
+        type: "entity-grid",
+        heading: "1.2.0 Reverts",
+        items: [
+          {
+            title: "Cinnabark CD 5 to 4",
+            summary:
+              "Cinnabark fires one tick earlier than the 1.1.0 value. Lets the Cinnabark core fire on the same turn as the cast window opens.",
+            badge: "Revert",
+          },
+          {
+            title: "Drumire cost 50 to 45",
+            summary:
+              "Drumire's shop cost drops from 50 to 45 gold. The third Drumire copy now lands by Day 4 in most openings.",
+            badge: "Revert",
+          },
+        ],
+      },
+      {
+        id: "patch-120-trinket-events",
+        type: "entity-grid",
+        heading: "1.2.0 Trinket And Event Changes",
+        items: [
+          {
+            title: "Zenith Stone no longer double-dips",
+            summary:
+              "Zenith Stone used to grant a level-up and a duplicate on the same trigger. The 1.2.0 nerf removes the double-dip; the trinket now grants only one of the two effects per trigger.",
+            badge: "Nerf",
+          },
+          {
+            title: "Crimson Ticket cost 50 to 30",
+            summary:
+              "Crimson Ticket cost drops from 50 to 30 gold. The cheaper pivot item fits cleanly into the Pantra burn line as a level-up shortcut.",
+            badge: "Buff",
+          },
+          {
+            title: "Dragon Egg pool widens",
+            summary:
+              "The Dragon Egg event now hatches Ouroblaze, Tsunamere, or Stellagon. The widened pool shifts the event from a Rare-pivot to a Mythical-pivot.",
+            badge: "Pool change",
+          },
+        ],
+      },
+      {
+        id: "patch-120-preserved",
+        type: "callout",
+        tone: "tip",
+        title: "What Stays The Same",
+        body:
+          "The post-1.1.0 cooldown-trinket ladder (Battery Pack / Coffee / Hot Pepper / Focus Pill / Metronome / Training Weights) is still the only way to fast-cast past the natural CD. Alpha Crown remains a Mythical-tier trinket; the 1.2.0 patch did not move it. Burglar and Scavenger still bend the in-run economy by doubling trinket income and stacking low-rarity trinkets, respectively.",
+      },
+      {
         id: "second-chance",
         type: "callout",
         tone: "tip",
@@ -975,7 +1361,7 @@ export const guidePages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "official",
-    lastReviewed: "2026-10-09",
+    lastReviewed: "2026-10-13",
   },
   {
     id: "multiplayer-ranked",
@@ -990,24 +1376,24 @@ export const guidePages: PageContent[] = [
     seoTitle:
       "Batomon Showdown Multiplayer Guide: Ranked Ladder Tips & MMR",
     metaDescription:
-      "Batomon Showdown multiplayer guide covering async PvP, cross-platform saves, divisions, stars, MMR, Master rank, and how ranked opponents read saved teams.",
+      "Batomon Showdown multiplayer guide covering async PvP, cross-platform saves, the six-tier Ranked structure (Bronze-Silver-Gold-Platinum-Diamond-Master), the star and MMR formulas, the 10-win Casual unlock, and how ranked opponents read saved teams.",
     summary:
-      "How asynchronous PvP works, cross-platform saves, the ranked ladder, where the top of the leaderboard sits, and how to make the saved team itself strong.",
+      "How asynchronous PvP works, cross-platform saves, the full Ranked structure with star and MMR formulas, where the top of the leaderboard sits, and how to make the saved team itself strong.",
     hero: {
       eyebrow: "Multiplayer and ranked",
       subtitle:
-        "Async PvP with no live opponent: every decision can be made slowly before the saved squad is uploaded.",
+        "Async PvP with no live opponent: every decision can be made slowly before the saved squad is uploaded. Ranked unlocks after 10 Casual wins and runs on a six-tier ladder with a fixed star and MMR formula.",
       ctas: [
         { label: "Trinkets & Economy", href: "/guides/progression-systems" },
         { label: "Best Team & Meta", href: "/guides/team-builds-meta" },
       ],
     },
     quickAnswer:
-      "Batomon Showdown multiplayer is asynchronous PvP. Players never fight each other in real time. A run is a solo campaign in which you pick a Trainer, assemble a squad of Batomon with trinkets and items, and battle NPC trainers to collect 10 badges. Once the run is finished, the saved squad is uploaded to the platform. Other players then face that saved squad as their opponent, and your own saved squad becomes the opponent for someone else.",
+      "Batomon Showdown multiplayer is asynchronous PvP. Players never fight each other in real time. A run is a solo campaign in which you pick a Trainer, assemble a squad of Batomon with trinkets and items, and battle NPC trainers to collect 10 badges. Once the run is finished, the saved squad is uploaded to the platform. Other players then face that saved squad as their opponent, and your own saved squad becomes the opponent for someone else. Ranked uses six tiers (Bronze-Silver-Gold-Platinum-Diamond-Master), eight divisions per tier with Master as an MMR leaderboard, and unlocks after 10 Casual wins.",
     keyFacts: [
       { label: "Format", value: "Async PvP via saved squads" },
       { label: "Cross-platform", value: "Steam and Android share saves" },
-      { label: "Top tier", value: "Master rank" },
+      { label: "Ranked tiers", value: "Bronze · Silver · Gold · Platinum · Diamond · Master" },
       { label: "Top of ladder", value: "ddevgrande 5,740 MMR" },
     ],
     modules: [
@@ -1024,24 +1410,67 @@ export const guidePages: PageContent[] = [
         heading: "How Ranked Play Works",
         items: [
           {
-            title: "Divisions",
-            summary: "The named ranks the player climbs through over a season.",
+            title: "Six tiers",
+            summary: "Bronze, Silver, Gold, Platinum, Diamond, Master. Master is a pure MMR leaderboard rather than a divided tier.",
+          },
+          {
+            title: "Eight divisions per tier",
+            summary: "Division 8 is the lowest; Division 1 is the highest. Each division holds 0-4 stars.",
           },
           {
             title: "Stars",
-            summary: "The per-division marks that fill before promotion to the next Division.",
+            summary: "0-4 stars per division. Hitting 5 stars in any division triggers instant promotion to the next division.",
           },
           {
             title: "MMR (Match Making Rating)",
-            summary:
-              "The underlying numeric rating used to sort players on the global ladder.",
+            summary: "The underlying numeric rating used to sort players on the global ladder.",
           },
           {
             title: "Master rank",
-            summary:
-              "The top tier reached by the highest-rated players each season.",
+            summary: "The top tier reached by the highest-rated players each season. No divisions; leaderboard-only.",
           },
         ],
+      },
+      {
+        id: "ranked-unlock",
+        type: "prose",
+        heading: "How To Unlock Ranked",
+        body:
+          "Ranked unlocks after the player records 10 wins in Casual. There is no other prerequisite: the unlock is purely a 10-win Casual gate. Post-launch the developer has not added a seasonal reset, so the climb you start after unlocking Ranked is the climb you keep until a future patch note says otherwise. Plan your early Ranked runs around the post-1.2.0 S+ cores (Dracana, Cinnabark, Velocect) rather than the pre-1.1.0 lineup.",
+      },
+      {
+        id: "star-formula",
+        type: "entity-grid",
+        heading: "Star-Change Formula (Per Ranked Run)",
+        items: [
+          {
+            title: "0-4 wins",
+            summary: "Lose 5, 4, 3, 2, or 1 star respectively (5-1). A bad run still costs at least 1 star.",
+            badge: "Star change",
+          },
+          {
+            title: "5 wins",
+            summary: "Hold (no star change). The break-even point for a Ranked run.",
+            badge: "Star change",
+          },
+          {
+            title: "6-10 wins",
+            summary: "Gain 1, 2, 3, 4, or 5 stars respectively. A 10-win run promotes the next division instantly.",
+            badge: "Star change",
+          },
+          {
+            title: "5-star instant promotion",
+            summary: "Hitting 5 stars in any division (Bronze-Silver-Gold-Platinum-Diamond) promotes to the next division immediately, bypassing the 1-2-3-4-5 ladder.",
+            badge: "Promotion",
+          },
+        ],
+      },
+      {
+        id: "mmr-formula",
+        type: "prose",
+        heading: "MMR Formula And Per-Tier Expected Wins",
+        body:
+          "MMR change after each Ranked run is 20 multiplied by (your wins minus expected wins), rounded, with a minimum of 0. The expected wins per tier step down as the climb gets harder:\n\n- Bronze: about 9 expected wins.\n- Silver: about 8.125 expected wins.\n- Gold: about 7.25 expected wins.\n- Platinum: about 6.375 expected wins.\n- Diamond and Master: about 5.5 expected wins.\n\nThe practical read is that a Bronze 10-win run produces roughly 20 x (10 - 9) = 20 MMR, while a Diamond 10-win run produces roughly 20 x (10 - 5.5) = 90 MMR. Late-climb wins are worth more, which is why the formula rewards consistency at the top of the ladder.",
       },
       {
         id: "run-finishes",
@@ -1089,6 +1518,6 @@ export const guidePages: PageContent[] = [
     ],
     schemaTypes: ["Article", "BreadcrumbList"],
     sourceStatus: "official",
-    lastReviewed: "2026-10-09",
+    lastReviewed: "2026-10-13",
   },
 ];

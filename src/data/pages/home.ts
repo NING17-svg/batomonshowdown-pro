@@ -26,14 +26,14 @@ export const homePage: PageContent = {
     ],
   },
   quickAnswer:
-    "Batomon Showdown is an asynchronous PvP auto-battler on Steam and Android. Each run starts with one of three Trainers, builds a squad of Batomon that merges upward, and ends at 10 trainer badges. The saved squad then climbs an asynchronous ranked ladder against other players' saved teams.",
+    "Batomon Showdown is an asynchronous PvP auto-battler on Steam and Android. Each run starts with one of three Trainers, builds a squad of Batomon that merges upward, and ends at 10 trainer badges. The saved squad then climbs an asynchronous ranked ladder against other players' saved teams. The post-1.2.0 (Smuggler) balance pass shifted the S+ cores to Dracana, Cinnabark, and Velocect, added the Pantra burn line and Smuggler cross-region pulls, and reworked the Ranked ladder formula.",
   quickAnswerContext:
-    "Use the guides below to plan a run, pick a Trainer, build a squad, and climb the ladder. Every decision is locked in before the Battle button is pressed.",
+    "Use the guides below to plan a run, pick a Trainer, build a squad, and climb the ladder. Every decision is locked in before the Battle button is pressed. The 1.2.0 patch means meta cores and trainer balance have moved since Season 1.",
   keyFacts: [
     { label: "Genre", value: "Async PvP auto-battler" },
     { label: "Platforms", value: "Steam and Android" },
     { label: "Run goal", value: "10 badges across 10 trainer fights" },
-    { label: "Ranked format", value: "Asynchronous ladder with saved squads" },
+    { label: "Ranked format", value: "6-tier ladder with star and MMR formulas" },
   ],
   modules: [
     {
@@ -60,19 +60,19 @@ export const homePage: PageContent = {
               label: "Trainer Tier List",
               href: "/guides/trainer-tier-list",
               description:
-                "Which Trainers the ladder actually plays (Burglar, Painter, Twins, Scavenger) and how to read the three-card hand at run start.",
+                "Which Trainers the ladder actually plays (Burglar, Painter, Twins, Scavenger), the six new Jinto trainers (Twins, Gentleman, Painter, Burglar, Scavenger, Black Belt), and the new 1.2.0 Smuggler trainer.",
             },
             {
               label: "Batomon Tier List",
               href: "/guides/batomon-tier-list",
               description:
-                "The highest pick-rate Batomon and the current S+ cores (Gaiadrasil + Dryadell, Miasmaw + Drumire, Ouroblaze + Furnadon).",
+                "The post-1.2.0 S+ cores (Dracana, Cinnabark, Velocect), the Pantra burn line, the Smuggler foreign options, and the 50+ Jinto roster unlocked at 5 Pantra wins.",
             },
             {
               label: "Best Team And Meta Builds",
               href: "/guides/team-builds-meta",
               description:
-                "Meta cores, standout support slots, and the 4-role build framework (Starter, Repeater, Amplifier, Survivor).",
+                "Post-1.2.0 meta cores (Dracana 61.4%, Cinnabark 51.8%, Velocect 43.5% 10-win), the Pantra burn line, the Smuggler cross-region comp, and the 4-role framework.",
             },
             {
               label: "Positioning And Synergies",
@@ -89,13 +89,13 @@ export const homePage: PageContent = {
               label: "Trinkets And Economy",
               href: "/guides/progression-systems",
               description:
-                "The 93-trinket pool, the 40-item shop pool, and the merge-plus-gold economy loop.",
+                "The 93-trinket pool, the 40-item shop pool, the merge-plus-gold economy loop, and the 1.2.0 (Smuggler) balance pass.",
             },
             {
               label: "Multiplayer And Ranked",
               href: "/guides/multiplayer-ranked",
               description:
-                "How asynchronous PvP works, divisions, stars, MMR, Master rank, and how opponents read a saved team.",
+                "Async PvP, six-tier Ranked (Bronze-Silver-Gold-Platinum-Diamond-Master), eight divisions per tier, the 5-star promotion rule, the star and MMR formulas, and the 10-win Casual unlock.",
             },
           ],
         },
@@ -177,5 +177,5 @@ export const homePage: PageContent = {
   ],
   schemaTypes: ["WebSite", "CollectionPage", "FAQPage"],
   sourceStatus: "internal",
-  lastReviewed: "2026-10-09",
+  lastReviewed: "2026-10-13",
 };

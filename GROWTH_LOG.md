@@ -2,6 +2,15 @@
 
 Operational diary for `batomonshowdown.pro` (site_id `batomonshowdown-pro`). Records only real site-specific events; the shared V4 template history lives in `game-workflow` and is not copied here.
 
+## 2026-10-14 — Post-1.2.0 (Smuggler) content update
+
+- Refreshed `/guides/team-builds-meta/` to the post-1.2.0 S+ cores (Dracana 61.4%/58, Cinnabark 51.8%/128, Velocect 43.5%/99), added the Pantra burn line and the Smuggler cross-region comp.
+- Refreshed `/guides/batomon-tier-list/` to the post-1.2.0 pick-rate and S+ list, added the Pantra burn line, the Smuggler foreign options (Cordycant, Sproach), and the Jinto region section (5-Pantra-win unlock, 50+ roster, post-1.2.0 nerf ladder).
+- Added a 1.2.0 (Smuggler) balance section to `/guides/progression-systems/` covering the Smuggler trainer, Jinto carry nerf ladder, Cinnabark/Drumire reverts, Pantra Cinderfly/Thorntail/Noxnimbus buffs, Chemist/Redhead/Gamer adjustments, Zenith Stone no-double-dip, Crimson Ticket cost change, and the Dragon Egg pool widening.
+- Added the six new Jinto trainers and 1.2.0 trainer balance to `/guides/trainer-tier-list/`.
+- Added the full Ranked structure (six tiers, eight divisions, Master MMR leaderboard, 5-star promotion, star and MMR formulas, 10-win Casual unlock, no seasonal reset) to `/guides/multiplayer-ranked/`.
+- Updated home page card descriptions and quick answer to reflect the post-1.2.0 state.
+
 ## 2026-10-09 — First release
 
 - **Site id:** `batomonshowdown-pro`
