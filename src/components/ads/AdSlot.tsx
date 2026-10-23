@@ -5,6 +5,8 @@ import { ads, adInventory } from "@/data/ads";
 import { bannerSize, selectAdUnit } from "@/lib/ad-placement";
 import type { AdDevice, AdInventory, AdPlacement } from "@/types/ads";
 
+// Reversible Adsterra-off arm of the 2026-10-23 paired 4v4 GSC experiment.
+const ADSTERRA_EXPERIMENT_OFF = true;
 const inventory = adInventory as AdInventory;
 const legacySlots: Record<AdPlacement, string> = {
   "responsive-banner": "page-top", "native-banner": "guide-native", "right-rail": "guide-rail",
@@ -57,6 +59,8 @@ export function AdSlot({ slot, placement, device }: { slot?: string; placement?:
     appendExecutableAdMarkup(frame, code);
     return () => frame.replaceChildren();
   }, [frame, code, preview, unit]);
+  // Keep bound platform codes intact; omit all ad slots and sponsored links.
+  if (ADSTERRA_EXPERIMENT_OFF) return null;
   return (
     <div ref={setHost} className="ad-position" data-ad-position={slotId}>
       {shown && unit ? (

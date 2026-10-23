@@ -2,6 +2,13 @@
 
 Operational diary for `batomonshowdown.pro` (site_id `batomonshowdown-pro`). Records only real site-specific events; the shared V4 template history lives in `game-workflow` and is not copied here.
 
+## 2026-10-23 - Adsterra 4v4 search-visibility experiment (ads-off)
+
+- Treatment: temporarily suppress all Adsterra ad slots and the sponsored Smartlink on batomonshowdown.pro for a paired 4v4 GSC visibility study; paired control sites retain ads.
+- Files changed: `src/components/ads/AdSlot.tsx` and this log. No page copy, routes, TDH, metadata, internal links, or AdSense ownership changes.
+- Existing platform ad codes in `src/data/ads.ts` remain intact for reversible restoration; the ads-off guard prevents third-party ad scripts from mounting.
+- Observation: 21 days after successful deployment; revert the guard after the observation period rather than removing platform placement definitions.
+
 ## 2026-10-14 — Post-1.2.0 (Smuggler) content update
 
 - Refreshed `/guides/team-builds-meta/` to the post-1.2.0 S+ cores (Dracana 61.4%/58, Cinnabark 51.8%/128, Velocect 43.5%/99), added the Pantra burn line and the Smuggler cross-region comp.
