@@ -2,6 +2,14 @@
 
 Operational diary for `batomonshowdown.pro` (site_id `batomonshowdown-pro`). Records only real site-specific events; the shared V4 template history lives in `game-workflow` and is not copied here.
 
+## 2026-10-28 - Restore five legacy routes
+
+- Task: Restore `/faq/`, `/about/`, `/contact/`, `/privacy-policy/`, and `/dlc-skin-pack/` after the V4 rebuild removed the previous routes.
+- Files changed: Root fixed-page route, release/site page data, FAQ data, content registry, footer navigation, content index, sitemap formatting, and trust-page ad rendering.
+- Content: Added game FAQs and the Steam-listed Supporter Pack contents (Gamer, Shopkeeper, and Redhead Badge Case Skins; cosmetic only); clarified site independence, official support channels, and website privacy integrations.
+- Layout: Suppressed in-body display ad slots for `pageType: site` pages. Normalized sitemap URLs to match the trailing-slash canonical routes.
+- Verification: Typecheck, lint, route manifest, static build, and final-HTML checks for route content, FAQ schema, canonical/sitemap URLs, internal links, and trust-page ad slots.
+
 ## 2026-10-23 - Adsterra 4v4 search-visibility experiment (ads-off)
 
 - Treatment: temporarily suppress all Adsterra ad slots and the sponsored Smartlink on batomonshowdown.pro for a paired 4v4 GSC visibility study; paired control sites retain ads.

@@ -2,7 +2,7 @@
 
 This is the live route inventory for `batomonshowdown.pro` as of the first release. Every URL below is served by the V4 Next.js static export and reachable through the shared Worker `game-guide-new-pool-001` (pool `new-guide-pool-001`). Routes are derived from `src/data/pages/home.ts` and `src/data/pages/guide-pages.ts` together with `guide-editor/page-plan.md`. No template sample URLs are included.
 
-Total routes: 8 page routes (1 home + 7 guide topics). All 14 source keywords from `searcher/keywords.json` are mapped to these 8 pages.
+Total routes: 13 page routes (1 home + 7 guide topics + 5 restored FAQ, DLC, and site-information pages). All 14 source keywords from `searcher/keywords.json` are mapped to the 8 core guide routes.
 
 ## Page routes
 
@@ -16,6 +16,11 @@ Total routes: 8 page routes (1 home + 7 guide topics). All 14 source keywords fr
 | `/guides/battle-strategy/` | `battle-strategy` | Battle Strategy | Batomon Showdown Positioning Guide: Synergies & Placement | Batomon Showdown positioning guide covering placement keywords, synergies, status effects, type and faction synergies, and essential trigger interactions. |
 | `/guides/progression-systems/` | `progression-systems` | Progression Systems | Batomon Showdown Trinkets Guide: Economy & 93 Trinket Pool | Batomon Showdown trinkets guide covering the 93-trinket pool, the 40-item shop pool, the merge-to-trinket loop, the post-1.1.0 cooldown ladder, the 1.2.0 (Smuggler) balance pass, and which Trainers bend the in-run economy. |
 | `/guides/multiplayer-ranked/` | `multiplayer-ranked` | Multiplayer | Batomon Showdown Multiplayer Guide: Ranked Ladder Tips & MMR | Batomon Showdown multiplayer guide covering async PvP, cross-platform saves, the six-tier Ranked structure (Bronze-Silver-Gold-Platinum-Diamond-Master), the star and MMR formulas, the 10-win Casual unlock, and how ranked opponents read saved teams. |
+| `/faq/` | `faq` | FAQ | Batomon Showdown FAQ | Quick answers about gameplay, platforms, Supporter Pack DLC, and official support | FAQ answers / official source links | General reference | Covers asynchronous PvP, Steam/Android availability, the cosmetic DLC, site independence, and developer support channels. |
+| `/dlc-skin-pack/` | `dlc-skin-pack` | Product reference | Batomon Showdown Supporter Pack | Check included skins, base-game requirement, and gameplay impact | Skin list / purchase notes / Steam source | Optional DLC reference | Lists the three badge case skins and states that the pack is cosmetic only; price is dated and region-dependent. |
+| `/about/` | `about` | Trust | Batomon Showdown Guides | Understand site scope and editorial sources | Independent-site statement / guide links | Site context | Identifies this site as unofficial and describes its coverage and information sources. |
+| `/contact/` | `contact` | Trust | Batomon Showdown support | Find the correct game-support channel | Developer links / Steam Support / site boundary | Support routing | Points to berrymint's official support channels and explains that this guide site has no support form or game-account access. |
+| `/privacy-policy/` | `privacy-policy` | Trust | Batomon Showdown Guides privacy policy | Understand site analytics, hosting, advertising, and choices | Data-use summary / provider links / browser controls | Site trust | Describes GA4 and AdSense integration and the current Adsterra suppression experiment with linked provider policies. |
 
 ## Operational files
 

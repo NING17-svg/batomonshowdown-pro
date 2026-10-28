@@ -23,7 +23,13 @@ export const primaryNavigation: LocalizedNavigationItem[] = [
   },
 ];
 
-export const footerNavigation: LocalizedNavigationItem[] = [];
+export const footerNavigation: LocalizedNavigationItem[] = [
+  { href: "/faq/", labels: { "en-US": "FAQ" } },
+  { href: "/dlc-skin-pack/", labels: { "en-US": "Supporter Pack" } },
+  { href: "/about/", labels: { "en-US": "About" } },
+  { href: "/contact/", labels: { "en-US": "Contact" } },
+  { href: "/privacy-policy/", labels: { "en-US": "Privacy" } },
+];
 
 export function navigationLabel(
   item: LocalizedNavigationItem,

@@ -21,6 +21,7 @@ import type { PageContent } from "@/types/content";
 export function ContentPage({ page, themeConfig = theme, adAnchors = [] }: { page: PageContent; themeConfig?: ThemeConfig; adAnchors?: ModuleAdAnchor[] }) {
   const faqs = getFaqsForPage(page);
   const related = getRelatedPages(page);
+  const showDisplayAds = page.pageType !== "site";
   const primarySchema =
     page.pageType === "wiki" || page.pageType === "guides"
       ? collectionPageSchema(page)
@@ -35,7 +36,7 @@ export function ContentPage({ page, themeConfig = theme, adAnchors = [] }: { pag
       <JsonLd data={breadcrumbSchema(page)} />
       <JsonLd data={primarySchema} />
       {faqs.length ? <JsonLd data={faqSchema(faqs)} /> : null}
-      <AdSlot slot="page-top" />
+      {showDisplayAds ? <AdSlot slot="page-top" /> : null}
       <PageHero page={page} themeConfig={themeConfig} />
       <div className="content-layout" data-variant={variant}>
         <div className="article-body">
@@ -45,9 +46,9 @@ export function ContentPage({ page, themeConfig = theme, adAnchors = [] }: { pag
             locale={page.locale}
           />
           <div className={variant === "reading-right-rail" ? "inline-contents mobile-contents" : "inline-contents"}><PageContents page={page} collapsible /></div>
-          <AdSlot slot="guide-native" device="mobile" />
+          {showDisplayAds ? <AdSlot slot="guide-native" device="mobile" /> : null}
           <AdModuleSequence modules={page.modules} anchors={adAnchors} />
-          <AdSlot slot="guide-before-faq" />
+          {showDisplayAds ? <AdSlot slot="guide-before-faq" /> : null}
           <FAQBlock faqs={faqs} />
           <RelatedLinks pages={related} />
         </div>
